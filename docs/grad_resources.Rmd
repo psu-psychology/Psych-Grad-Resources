@@ -1,0 +1,356 @@
+---
+title: "Resources for Psychology Graduate Students"
+author: "Daniel N. Albohn"
+date: "9/7/2017"
+output:
+  html_document:
+    theme: spacelab
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+All resources described in this document are free
+and platform agnostic unless otherwise noted. This is
+not an exhaustive list by any means. It is meant to
+provide a jump start on resources available to graduate
+students who are conducting psychological research
+at Penn State.
+
+## Experimental Software  
+### OpenSesame
+Homepage: http://osdoc.cogsci.nl  
+GitHub: https://github.com/smathot/OpenSesame
+
+OpenSesame is a python-based program for creating experiments.
+It has a number of capabilities built in, such as image and sound
+presentation, keyboard, mouse, and voice response, and 
+questionnaire forms. OpenSesame also has the ability to be
+(essentially) endlessly extended with custom python scripts.
+
+OpenSesame uses a graphical user interface (GUI) for experiment
+building, which means you can use point-and-click to build
+your experiments. Extending OpenSesame with python requires 
+scripting code.
+
+#### Tutorials and Resources
+- [Beginner's Tutorial](http://osdoc.cogsci.nl/3.1/tutorials/beginner/)
+- [Advanced Tutorial](http://osdoc.cogsci.nl/3.1/tutorials/advanced/)
+- [Forum](http://forum.cogsci.nl/index.php?p=/categories/opensesame)
+
+
+### PsychoPy
+Homepage: http://www.psychopy.org  
+Github: https://github.com/psychopy/psychopy
+
+PsychoPy is a python-based program for experiment building.
+It has both a GUI and a code editor. Unlike OpenSesame,
+PsychoPy uses specific python libraries built specifically for
+behavioral experimentation. Thus, it is more
+heavily based in programming, but also allows for greater
+manipulation, control, and extension. This program
+may be better if the experiment is abnormal or complex.
+
+The developers of PsychoPy are also attempting to make
+experiments built using this program deployable online.
+As of now, this is considered in-development and experimental.
+
+#### Tutorials and Resources
+- [Documentation and Tutorials](http://www.psychopy.org/documentation.html)
+- [Forum](https://discourse.psychopy.org)
+
+
+### jsPsych
+Homepage: http://www.jspsych.org  
+GitHub: https://github.com/jspsych/jsPsych
+
+A JavaScript library for creating experiments. It has no GUI,
+so all experiments are coded in HTML files. It has the ability
+to deploy experiment applications online (if you have a server).
+PsychoPy uses jsPsych as the backend for deploying experiments
+online.
+
+#### Tutorials and Resources
+- [Tutorial](http://docs.jspsych.org/tutorials/rt-task/#summary-of-tutorial-content)
+- [Forum](https://groups.google.com/forum/#!forum/jspsych)
+
+
+### PsyToolkit
+http://www.psytoolkit.org
+
+A service that provides the ability to create simple online experiments and
+questionnaires. The maintainer of this service also provides free server use
+for data collection and storage. There is an
+[academic paper](../man/stoet2017-top-psytoolkit.pdf)
+describing the service.
+
+
+### Qualtrics
+https://pennstate.qualtrics.com/
+
+As a Penn State graduate student you are entitled to a free Qualtrics
+account that allows for up to two active surveys at any time.
+
+#### Tutorials and Resources
+- [Tutorial](https://www.qualtrics.com/support/survey-platform/getting-started/step-1-beginning-build/)
+- [Advanced Tutorial](https://sites.google.com/site/complexcognitionbgsu/data-collection-software/qualtricsadvanced)
+
+
+## Statistical & Visualization Software
+### R and RStudio
+https://cran.r-project.org  
+https://www.rstudio.com
+
+R is a programming language used for statistical analyses and graphics.
+R's strength is its incredibly diverse number of packages that are available for
+download. Almost any type of analysis for any type of data in any format can
+be analyzed using a combination of R and one of its packages. You can
+browse R packages [here](https://cran.r-project.org/web/packages/available_packages_by_name.html)
+to get a sense for the amount available.
+
+RStudio is an Integrated Development Environment (IDE) for R. It enhances the standard R
+program by providing an easy and visually appealing way to organize R code, R files,
+projects, and R itself into a single space. You can run
+[RStudio in your browser](rstudio.aci.ics.psu.edu)
+through a server operated by Penn State's
+[Institute for CyberScience](https://ics.psu.edu).
+
+#### Tutorials and Resources
+- [Tutorials for R by RStudio](https://www.rstudio.com/online-learning/)
+- [R for Data Scince EBook](http://r4ds.had.co.nz)
+- [The Personality Project's Guide to R](http://personality-project.org/r/)
+- [Learning to Work with R by Association for Psychological Science](https://www.psychologicalscience.org/observer/learning-to-work-with-r)
+- [A Psychologist's Guide to R](https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R)
+
+
+### Octave
+https://www.gnu.org/software/octave/
+
+Powerful mathematics-oriented syntax with built-in plotting and
+visualization tools. A free alternative to Matlab. Most Matlab
+scripts can be run using this software. 
+
+
+### Plotly
+https://plot.ly
+
+Plotly is a service for creating interactive data visualization.
+The service makes it easy to share
+these visualizations online with others. It also
+has an excellent R and python extension
+for transforming visualizations your create in
+these programs into interactive visualizations.
+
+
+### Tableau
+https://www.tableau.com
+
+Another service for interactive data exploration
+and visualization.
+
+
+## Additional Software
+### Text Editors
+#### ATOM
+https://atom.io
+
+An opensource text editor with many extensions. You can run
+code from a variety of languages, browse files on your system,
+and create a reproducible workflow using just ATOM and its
+extensions.
+
+
+#### Sublime Text
+https://www.sublimetext.com
+
+A text editor that is similar in scope to ATOM, provides
+lots of useful extensions, but is not as actively maintained
+or developed.
+
+
+#### LaTex and TexStudio
+https://www.latex-project.org  
+http://www.texstudio.org
+
+LaTex is a typesetting program language for technical and
+scientific documentation, manuscripts, articles, and books. It
+has many useful functions for providing high quality style,
+equations, and references for these types of documents.
+
+TexStudio is one of many programs designed specifically for
+writing and creating LaTex documents.
+
+
+### Versioning
+#### git & GitHub
+Homepage: https://git-scm.com  
+Homepage: https://github.com
+
+git is a program that tracks "versifying," or how a document
+changes over time. This is an important part of good data science
+([check out why here](deadly_sins.html)). git is a command line
+program. GitHub is a service that provides a GUI for git, as well
+as a service for syncing your versioned projects across
+devices.
+
+Students and teachers can get a free [GitHub pro account](https://education.github.com).
+Pro accounts allow your repositories (repos) to be private.
+
+Beginners can get to know git in this [interactive tutorial](https://try.github.io/levels/1/challenges/1).
+If you prefer to read, GitHub has provided an excellent
+[introductory tutorial](https://help.github.com/articles/git-and-github-learning-resources/).
+
+
+#### Box
+https://box.psu.edu
+
+Penn State students have unlimited storage on Box with
+their PSU account.
+
+
+### Image Manipulation
+#### GIMP - Graphical Image Manipulation Program
+https://www.gimp.org
+
+GIMP is an image editor that can be considered a
+free alternative to PhotoShop. Because GIMP is
+opensource and community-driven, it has a lot of
+plugins that allow extending GIMP beyond just
+simple-to-moderate image editing.
+
+
+#### Inkscape
+https://inkscape.org/en/
+
+Program for creating, editing, and manipulating vector graphics
+(e.g., `.svg`, `.pdf`).
+[Vector graphics](https://en.wikipedia.org/wiki/Vector_graphics) 
+are images based on location, position, and attributes of points in an
+an image, rather than pixels. This allows for a vector graphic to be
+of much higher quality than a bitmap (e.g., `.jpg`,`.png`,`.tiff`).
+Thus, vector graphics maintain their resolution and graphical positions
+even when changing image size.
+
+
+#### ImageMagick
+https://www.imagemagick.org/script/index.php
+
+Program to create, edit, compose, or convert bitmap images.
+Typically this is done from the command line, but you can
+download extensions to integrate with other languages such as
+R, python, or C++.
+
+
+#### XnConvert
+http://www.xnview.com/en/xnconvert/
+
+A program that allows for the batch manipulation of images. Useful
+if you have many bitmap photos that you need to grayscale, resize,
+or crop, for example.
+
+
+#### ffmpeg
+https://www.ffmpeg.org
+
+Command line tools to record, convert and stream audio and video.
+This program has a difficult learning curve, but is also very
+powerful. If you use videos for experiments, it is highly
+recommended you become familiar with this program. Useful for
+batch processing videos.
+
+
+### Citation Managers
+[Comprehensive comparison](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software) 
+of different softwares.
+
+#### Mendeley
+https://www.mendeley.com
+
+A reference manager to organize, sort, and annotate all of your academic
+articles. Provides cloud storage to sync libraries across devices. It
+also integrates with Microsoft Word and LibreOffice via plugins so
+you can automatically insert and appropriate cite research as you
+write.
+
+
+#### Zotero
+https://www.zotero.org
+
+An alternative reference manager. Integrates well with your web browser
+to easily store references from the web. Syncs library across devices,
+and provides ability to insert citations into various documents (Word,
+emails, etc.).
+
+
+#### JabRef
+http://www.jabref.org
+
+A bibliography reference manager that is formatted in BibTex, the standard
+way LaTex documents cite bibliographies/references. Because of this,
+it works particularly well with TexStudio for an optimized workflow. It
+also has the ability to automatically search for the full text of an
+article and import it.
+
+
+#### Papers
+http://www.readcube.com/papers/
+
+A non-free ($49.99 for students) PDF and reference manager. Arguably,
+(in my opinion) the best integration of a reference and PDF
+file manager. It is easy to use and integrates with both
+Microsoft Word and LaTex seamlessly.
+
+
+## Penn State Resources
+### PASS and Personal Webspace
+Homepage: https://explorer.pass.psu.edu/  
+Homepage: http://personal.psu.edu/xyz123/
+
+Your personal webspace has the ability to host
+files accessible either to just you (`www_protected/`) or the
+world (`www/`). If you upload HTML files, you can host dynamic
+web content. Theoretically, you can code
+experiments in HTML and host them on your personal
+webspace. For example, see a working
+[example](http://php.scripts.psu.edu/dna5021/cyberball/index.htm)
+of the
+[CyberBall](https://cyberball.wikispaces.com) 
+task on my webspace.
+
+### WebApps
+https://webapps.psu.edu
+
+Provides access to several popular applications (MS Office, MatLab, SAS)
+through your browser.
+
+
+### Penn State Microsoft Office for Students
+http://software.psu.edu/news/microsoft-no-cost-software 
+
+As a full time Penn State student, you have the opportunity to receive
+Microsoft Office (for both Windows and Macs) and Microsoft Windows 10
+for free. Instructions are provided at the link above.
+
+### Institute for CyberScience Advanced CyberInfrastructure
+https://ics.psu.edu/advanced-cyberinfrastructure/
+
+Provides advanced computing needs for researchers that require
+specialized and/or high-performance computing needs. They
+maintain a [variety of programs](https://ics.psu.edu/advanced-cyberinfrastructure/support/software/),
+and offer a [tutorial](https://ics.psu.edu/advanced-cyberinfrastructure/support/tutorials/)
+for connecting to their system.
+
+
+## Other Resources
+- [Penn State Data Science Website](https://psu-psychology.github.io/data-science-and-reproducibility/)
+- [Penn State Data Science Google Group](https://groups.google.com/forum/#!forum/psu-psychology-data-science)
+- [Penn State Psychology GitHub Repo](https://github.com/psu-psychology)
+- [Penn State's 2017 R Bootcamp](https://psu-psychology.github.io/r-bootcamp/)
+- [Programming for Psychologists](https://crumplab.github.io/programmingforpsych/)
+
+________________________________________________________
+
+Last updated on `r Sys.Date()`

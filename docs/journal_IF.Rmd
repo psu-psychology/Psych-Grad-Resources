@@ -1,0 +1,32 @@
+---
+title: "Journal Impact Factors"
+author: "Daniel N. Albohn"
+date: "9/10/2017"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+IF <- readr::read_csv('../data/journal_IF.csv')
+```
+
+Special thanks to the Social Perception and Emotion
+Lab and its researchers for supplying the base statistics
+for this table.
+
+[Read more about impact factors and how to interpret them](http://researchguides.uic.edu/if/impact), or
+a thorough explanation and
+[critique them](https://blogs.scientificamerican.com/information-culture/understanding-the-journal-impact-factor-part-one/).
+
+To update this list, please alter the
+[data file](../data/journal_IF.csv), and then "re-knit" the [Rmarkdown file](journal_IF.Rmd).
+
+```{r echo=FALSE}
+knitr::kable(IF)
+```
+
+________________________________________________________
+
+Last updated on `r Sys.Date()`

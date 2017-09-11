@@ -1,0 +1,193 @@
+---
+title: "Deadly Sins of the Modern Data Scientist"
+author: "Daniel N. Albohn"
+date: "9/6/2017"
+output:
+  html_document:
+    theme: spacelab
+    toc: true
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Advances in data science is both a blessing and a curse
+for practitioners of the field. Technological advances enable
+data scientists to perform analyses faster than ever on data
+sets that are bigger than ever before. Computational advances allow
+for complex analyses to be accomplished at blazing fast speeds.
+Data collection can now be finished in a matter of hours with
+online resources and crowd-sourcing. Finally, sharing data has
+become as easy as uploading data to a cloud.
+
+While all of these advances make the workflow of a data scientist
+easier and more enjoyable, it also comes with a need and
+*responsibility* to manage data properly, document processes
+with greater detail, and prepare for the future. What follows
+are a few mistakes ("sins") that are common not only to new
+data scientists, but to everyone within the field. Anyone
+working with data should keep these ideas in mind as they
+collect, store, and analyze data.
+
+## Data Collection
+
+### 1). Failure to Log Abnormalities Immediately
+A failure to log any abnormalities or observations immediately by those who
+are collecting the data runs the risk of either forgetting what happened or
+forgetting to log at all. Logs help supplement data cleaning down the road.
+
+### 2). Failure to Record System Specifications
+While it might seem unnecessary in the short term, knowing what version of
+software you collected the data on and what operating system was running
+while it was being collected can save headaches in the future, especially
+if you (or others) wish to replicate the paradigm/results.
+
+### 3). Using Undescriptive or Uniformative Variable and File Names
+There is absolutely no need to limit variables names to an arbitrary number
+of characters. When designing a study that will log data (semi)-automatically,
+variable names should be descriptive of what they represent. For example,
+`b1rtec` is meaningless to anyone other than the individual who designed the
+study. Instead, `block1_rt_exclude_cond` helps cue both you and your
+data team in to what was being recorded.
+
+Similarly, file names should also be descriptive. Consider saving files so that
+a subject identifier, study name, and data of collection are all present in
+the filename.
+
+## Data Storage
+
+### 1). Unstructured File Organization
+A messy file structure can cause frustration at a minimum, and loss of data
+at an extreme. Consider finding a file structure that suits your needs as a
+data scientist and stick to that format for all of your projects. This
+helps keep yourself accountable for each project and what needs to get done.
+In addition, it help your research be reproducible for the future.
+
+One example of an organized file structure might be:
+
+- **Project_Name/** (root directory)
+    - README.txt
+    - *data/*
+        - all_subjects_10102017.csv.gz
+        - raw/
+            - subject1_exp1_092529017.csv
+            - subject2_exp1_092529017.csv
+            - ...
+        - cleaned/
+            - all_subjects_cleaned.csv.gz
+    - *scripts/*
+        - master_run.R
+        - clean_data.R
+        - analyze_rts.R
+        - generate_graphs.R
+        - ...
+    - *vis/*
+        - block1_rt_outliers_rm.pdf
+        - rts_by_sub.png
+        - ...
+    - *manuscript/*
+        - some_cool_pub.tex
+    - *etc/*
+        - system_info.txt
+        - references/
+            - expname_refs.bib
+            - article1.pdf
+            - ...
+
+### 2). Storing Altered Data Files
+While storing altered data files in-and-of itself is not a sin,
+storing manually altered data files as your *only* version of the
+data is a cardinal sin. You should always have an original copy of
+your data, with all its faults, missing points, and messy
+structure. Once the data has been properly cleaned, save it as
+an additional file under a new name and leave the original file
+untouched!
+
+### 3). Altering Data Files Without Documentation
+If you alter the structure of your data (and if you do any post
+processing you will), you should always have notes on what you
+did and why you did them in that way. This can be included in a README
+file or log, or as comments in a script. This is especially important
+if you manually insert or remove a data point based off of a researcher's note,
+for example.
+
+### 4). Saving Files in a Proprietary Format
+Technology is a rapidly evolving beast, and with it file formats come and go.
+Even the original `.doc` file
+extension is not preferred by Microsoft's own products, despite being
+the inventors of that file format.
+
+Data should be saved in *non-proprietary* file formats. The preferable
+non-proprietary file format is a text file. This includes the file
+extensions `.txt`, `.csv`, `.tsv`. Proprietary file formats include
+those that are produced by commercial software such as Excel (`.xls` or `.xlsx`),
+MatLab (`.mat`), E-Prime (`.edat`), and SPSS (`.sav`). Having files saved *only*
+in these proprietary formats reduces the number of ways your data can
+be accessed, and by whom it can be accessed by.
+
+Additionally, saving data in non-proprietary formats "future proofs" your data.
+Your data is no longer bound to only being accessible through a software that can stopped being
+actively developed or abandoned all together. If you need to share your data 20
+years from now because one of your studies became a new psychological classic,
+but you only have it saved in `.xlsx` form you run the risk of not having a  computer
+that can read that type of file any more because Microsoft went out of business 10 years ago
+(hey, it's a possibility). Essentially, your data is lost!
+
+### 5). Improper Data Backup and File Versioning
+Ideally, copies of your data should be backed up in multiple places. In addition
+to keeping a copy of your data on a physical device (e.g., your computer or an
+external USB drive), data should be stored on a server (e.g., a Research drive) or
+on a cloud service (e.g., Box).
+
+When storing data, you should keep track of different versions of your files.
+It might be tempting to save your manuscript as `manuscript_v1.tex`,
+`manuscript_v2.tex`, `manuscript_v2_advisor_edits.tex`, etc., but avoid
+this temptation when possible.
+Saving separate files for different versions is cumbersome, unnecessary, and
+bad practice as it is easy to lose track of what changed when and why.
+With version control, you only need one version of each file in your
+project. A version control manager will track the changes to a document
+between different time points, with the ability to "roll back" to a
+previous version at any time. Some
+services come with built in versioning (e.g., Box), but it is usually
+limited in its scope. Using a dedicated versioning tracker like `git`
+is the preferred method.
+
+If you are interested in learning how to use `git`, there is
+an excellent [interactive tutorial](https://try.github.io/levels/1/challenges/1).
+If you prefer to read, GitHub has provided an excellent
+[introductory tutorial](https://help.github.com/articles/git-and-github-learning-resources/).
+
+## Data Analysis
+
+### 1). Manually Altering Data Point(s)
+While falsifying data is unethical, that is not what is meant here. Manually altering
+data in a "data management" sense means opening a data file in a text or spreadsheet
+editor and altering a data point based off of some (appropriate) reason. For example,
+there might be a double subject number. A research assistant says that it was human error,
+so you decide to open one of the subject files and change the subject number in that file.
+
+A better approach would be to first document what change needs to be made (either in
+a README file or through comments in a script). Second, altering any data points should
+occur in a data cleaning pipeline (ideally, programatically) so that the change and issue
+are reproducible. In short, document the problem/issue in your data, as well as the
+solution!
+
+### 2). Saving Results without Saving Analysis Steps
+In line with creating reproducible workflows, saving analysis results for a project
+without knowing how you obtained those results has the potential of causing
+future stress and unnecessary re-analysis of the data. For example, using the
+point-and-click approach to analysis in SPSS and saving *only* the table
+outputs (t tests, regressions, correlations) is a deadly sin. While it may
+be tempting to think that you can remember exactly how you analyze your own
+data, it might be harder to recall the exact steps you took to do so months,
+years, or even decades in the future. Even if you use a point-and-click
+approach in SPSS, you can still save the script and code that SPSS uses
+"behind the scenes"!
+
+________________________________________________________
+
+Last updated on `r Sys.Date()`
+
