@@ -53,6 +53,9 @@ behavioral experimentation. Thus, it is more
 heavily based in programming, but also allows for greater
 manipulation, control, and extension. This program
 may be better if the experiment is abnormal or complex.
+PsychoPy does offer a GUI for building experiements, but
+fine-tuned control requires python coding knowlede using
+its "coding editor".
 
 The developers of PsychoPy are also attempting to make
 experiments built using this program deployable online.
@@ -149,7 +152,8 @@ these programs into interactive visualizations.
 https://www.tableau.com
 
 Another service for interactive data exploration
-and visualization.
+and visualization. Offers an online component for
+sharing visualizations with collaborators.
 
 
 ## Additional Software
@@ -189,9 +193,9 @@ writing and creating LaTex documents.
 Homepage: https://git-scm.com  
 Homepage: https://github.com
 
-git is a program that tracks "versifying," or how a document
+`git` is a program that tracks "versioning," or how a document
 changes over time. This is an important part of good data science
-([check out why here](deadly_sins.html)). git is a command line
+([check out why here](deadly_sins.html)). `git` is a command line
 program. GitHub is a service that provides a GUI for git, as well
 as a service for syncing your versioned projects across
 devices.
@@ -199,7 +203,7 @@ devices.
 Students and teachers can get a free [GitHub pro account](https://education.github.com).
 Pro accounts allow your repositories (repos) to be private.
 
-Beginners can get to know git in this [interactive tutorial](https://try.github.io/levels/1/challenges/1).
+Beginners can get to know `git` in this [interactive tutorial](https://try.github.io/levels/1/challenges/1).
 If you prefer to read, GitHub has provided an excellent
 [introductory tutorial](https://help.github.com/articles/git-and-github-learning-resources/).
 
@@ -208,7 +212,12 @@ If you prefer to read, GitHub has provided an excellent
 https://box.psu.edu
 
 Penn State students have unlimited storage on Box with
-their PSU account.
+their PSU account. Box has partnered with Penn State
+and the Office of Research Protections to allow for resaerch data
+to be stored on Box, even storage of Protected Health
+Information (i.e., sensitive data). You can read more about the
+rules and regulations for storing sensitive data on Box
+[here](http://box.psu.edu/rules-for-storing-protected-health-information-in-box/).
 
 
 ### Image Manipulation
@@ -232,7 +241,8 @@ are images based on location, position, and attributes of points in an
 an image, rather than pixels. This allows for a vector graphic to be
 of much higher quality than a bitmap (e.g., `.jpg`,`.png`,`.tiff`).
 Thus, vector graphics maintain their resolution and graphical positions
-even when changing image size.
+even when changing image size/dimensions (e.g., enlarging or shrinking
+an image to fit a presentation).
 
 
 #### ImageMagick
@@ -249,22 +259,21 @@ http://www.xnview.com/en/xnconvert/
 
 A program that allows for the batch manipulation of images. Useful
 if you have many bitmap photos that you need to grayscale, resize,
-or crop, for example.
+or crop in a similar manner, for example.
 
 
 #### ffmpeg
 https://www.ffmpeg.org
 
 Command line tools to record, convert and stream audio and video.
-This program has a difficult learning curve, but is also very
-powerful. If you use videos for experiments, it is highly
-recommended you become familiar with this program. Useful for
-batch processing videos.
+This program has a learning curve, but is also very
+powerful. Useful for batch processing videos.
 
 
 ### Citation Managers
 [Comprehensive comparison](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software) 
-of different softwares.
+of different softwares. Below are a few of the more popular programs
+and personal favorites.
 
 #### Mendeley
 https://www.mendeley.com
@@ -307,7 +316,10 @@ Microsoft Word and LaTex seamlessly.
 ## Penn State Resources
 ### PASS and Personal Webspace
 Homepage: https://explorer.pass.psu.edu/  
-Homepage: http://personal.psu.edu/xyz123/
+Homepage: http://personal.psu.edu/
+
+Personal webspace provided by Penn State to host files.
+Must [apply](https://www.work.psu.edu/webspace/) for webspace.
 
 Your personal webspace has the ability to host
 files accessible either to just you (`www_protected/`) or the
@@ -333,6 +345,7 @@ http://software.psu.edu/news/microsoft-no-cost-software
 As a full time Penn State student, you have the opportunity to receive
 Microsoft Office (for both Windows and Macs) and Microsoft Windows 10
 for free. Instructions are provided at the link above.
+
 
 ### Institute for CyberScience Advanced CyberInfrastructure
 https://ics.psu.edu/advanced-cyberinfrastructure/

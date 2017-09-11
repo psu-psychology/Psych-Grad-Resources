@@ -131,7 +131,7 @@ $(document).ready(function () {
 </ul></li>
 <li><a href="#data-storage">Data Storage</a><ul>
 <li><a href="#unstructured-file-organization">1). Unstructured File Organization</a></li>
-<li><a href="#storing-altered-data-files">2). Storing Altered Data Files</a></li>
+<li><a href="#storing-altered-data-files-overwriting-orignal-data-file">2). Storing Altered Data Files / Overwriting Orignal Data File</a></li>
 <li><a href="#altering-data-files-without-documentation">3). Altering Data Files Without Documentation</a></li>
 <li><a href="#saving-files-in-a-proprietary-format">4). Saving Files in a Proprietary Format</a></li>
 <li><a href="#improper-data-backup-and-file-versioning">5). Improper Data Backup and File Versioning</a></li>
@@ -143,7 +143,7 @@ $(document).ready(function () {
 </ul>
 </div>
 
-<p>Advances in data science is both a blessing and a curse for practitioners of the field. Technogical advances enable data scientists to perform analyses faster than ever on data sets that are bigger than ever before. Computational advances allow for complex analyses to be accomplished at blazing fast speeds. Data collection can now be finished in a matter of hours with online resources and crowdsourcing. Finally, sharing data has become as easy as uploading data to a cloud.</p>
+<p>Advances in data science is both a blessing and a curse for practitioners of the field. Technological advances enable data scientists to perform analyses faster than ever on data sets that are bigger than ever before. Computational advances allow for complex analyses to be accomplished at blazing fast speeds. Data collection can now be finished in a matter of hours with online resources and crowd-sourcing. Finally, sharing data has become as easy as uploading data to a cloud.</p>
 <p>While all of these advances make the workflow of a data scientist easier and more enjoyable, it also comes with a need and <em>responsibility</em> to manage data properly, document processes with greater detail, and prepare for the future. What follows are a few mistakes (“sins”) that are common not only to new data scientists, but to everyone within the field. Anyone working with data should keep these ideas in mind as they collect, store, and analyze data.</p>
 <div id="data-collection" class="section level2">
 <h2>Data Collection</h2>
@@ -165,7 +165,7 @@ $(document).ready(function () {
 <h2>Data Storage</h2>
 <div id="unstructured-file-organization" class="section level3">
 <h3>1). Unstructured File Organization</h3>
-<p>A messy file structure can cause frustration at a minimum, and loss of data at an extreme. Consider finding a file structure that suits your needs as a data scientist and stick to that format for all of your projects. This helps keep yourself accountable for each project and what needs to get done. In addition, it help your research be reproducible for the future.</p>
+<p>A messy file structure can cause frustration at a minimum, and loss of data at an extreme. Consider finding a file structure that suits your needs as a data scientist and stick to that format for all of your projects. This helps keep yourself accountable for each project and what needs to get done. In addition, it helps your research be reproducible for the future.</p>
 <p>One example of an organized file structure might be:</p>
 <ul>
 <li><strong>Project_Name/</strong> (root directory)
@@ -216,8 +216,8 @@ $(document).ready(function () {
 </ul></li>
 </ul>
 </div>
-<div id="storing-altered-data-files" class="section level3">
-<h3>2). Storing Altered Data Files</h3>
+<div id="storing-altered-data-files-overwriting-orignal-data-file" class="section level3">
+<h3>2). Storing Altered Data Files / Overwriting Orignal Data File</h3>
 <p>While storing altered data files in-and-of itself is not a sin, storing manually altered data files as your <em>only</em> version of the data is a cardinal sin. You should always have an original copy of your data, with all its faults, missing points, and messy structure. Once the data has been properly cleaned, save it as an additional file under a new name and leave the original file untouched!</p>
 </div>
 <div id="altering-data-files-without-documentation" class="section level3">
@@ -227,13 +227,13 @@ $(document).ready(function () {
 <div id="saving-files-in-a-proprietary-format" class="section level3">
 <h3>4). Saving Files in a Proprietary Format</h3>
 <p>Technology is a rapidly evolving beast, and with it file formats come and go. Even the original <code>.doc</code> file extension is not preferred by Microsoft’s own products, despite being the inventors of that file format.</p>
-<p>Data should be saved in <em>non-proprietary</em> file formats. The preferable non-proprietary file format is a text file. This includes the file extensions <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>. Proprietary file formats include those that are produced by commercial software such as Excel (<code>.xls</code> or <code>.xlsx</code>), MatLab (<code>.mat</code>), E-Prime (<code>.edat</code>), and SPSS (<code>.sav</code>). Having files saved <em>only</em> in these proprietary formats reduces the number of ways your data can be accessed, and by whom it can be accessed by.</p>
-<p>Additionally, saving data in non-proprietary formats “future proofs” your data. Your data is no longer bound to only being accessible through a software that can stopped being actively developed or abandoned all together. If you need to share your data 20 years from now because one of your studies became a new psychological classic, but you only have it saved in <code>.xlsx</code> form you run the risk of not having a computer that can read that type of file any more because Microsoft went out of business 10 years ago (hey, it’s a possibility). Essentially, your data is lost!</p>
+<p>Data should be saved in <em>non-proprietary</em> file formats. The preferable non-proprietary file format is a text file. This includes the file extensions <code>.txt</code>, <code>.csv</code>, <code>.tsv</code>. Proprietary file formats include those that are produced by commercial software such as Excel (<code>.xls</code> or <code>.xlsx</code>), MatLab (<code>.mat</code>), E-Prime (<code>.edat</code>), and SPSS (<code>.sav</code>). Having files saved <em>only</em> in these proprietary formats reduces the number of ways your data can be accessed, and whom can access it.</p>
+<p>Additionally, saving data in non-proprietary formats “future proofs” your data. Your data is no longer bound to only being accessible through a software that can stopped being actively developed or abandoned all together. If you need to share your data 20 years from now because one of your studies became a new psychological classic, but you only have it saved in <code>.xlsx</code> form, you run the risk of not having a computer that can read that type of file any more because Microsoft went out of business 10 years ago (hey, it’s a possibility). Essentially, your data is lost!</p>
 </div>
 <div id="improper-data-backup-and-file-versioning" class="section level3">
 <h3>5). Improper Data Backup and File Versioning</h3>
 <p>Ideally, copies of your data should be backed up in multiple places. In addition to keeping a copy of your data on a physical device (e.g., your computer or an external USB drive), data should be stored on a server (e.g., a Research drive) or on a cloud service (e.g., Box).</p>
-<p>When storing data, you should keep track of different versions of your files. It might be tempting to save your manuscript as <code>manuscript_v1.tex</code>, <code>manuscript_v2.tex</code>, <code>manuscript_v2_advisor_edits.tex</code>, etc., but avoid this temptation when possible. Saving seperate files for different versions is cumbersome, unnecessary, and bad practice as it is easy to lose track of what changed when and why. With version control, you only need one version of each file in your project. A version control manager will track the changes to a document between different time points, with the ability to “roll back” to a previous version at any time. Some services come with built in versioning (e.g., Box), but it is usually limited in its scope. Using a dedicated versioning tracker like <code>git</code> is the preferred method.</p>
+<p>When storing data, you should keep track of different versions of your files. It might be tempting to save your manuscript as <code>manuscript_v1.tex</code>, <code>manuscript_v2.tex</code>, <code>manuscript_v2_advisor_edits.tex</code>, etc., but avoid this temptation when possible. Saving separate files for different versions is cumbersome, unnecessary, and bad practice as it is easy to lose track of what changed when and why. With version control, you only need one version of each file in your project. A version control manager will track the changes to a document between different time points, with the ability to “roll back” to a previous version at any time. Some services come with built in versioning (e.g., Box), but it is usually limited in its scope. Using a dedicated versioning tracker like <code>git</code> is the preferred method.</p>
 <p>If you are interested in learning how to use <code>git</code>, there is an excellent <a href="https://try.github.io/levels/1/challenges/1">interactive tutorial</a>. If you prefer to read, GitHub has provided an excellent <a href="https://help.github.com/articles/git-and-github-learning-resources/">introductory tutorial</a>.</p>
 </div>
 </div>
@@ -241,13 +241,14 @@ $(document).ready(function () {
 <h2>Data Analysis</h2>
 <div id="manually-altering-data-points" class="section level3">
 <h3>1). Manually Altering Data Point(s)</h3>
-<p>While falsifying data is unethical, that is not what is meant here. Manually altering data in a “data management” sense means opening a data file in a text or spreadsheet editor and altering a data point based off of some (approrpiate) reason. For example, there might be a double subject number. A research assistant says that it was human error, so you descide to open one of the subject files and change the subject number in that file.</p>
-<p>A better approach would be to first document what change needs to be made (either in a README file or through comments in a script). Second, altering any data points should occur in a data cleaning pipeline (ideally, programatically) so that the change and issue are reproducable.</p>
+<p>While falsifying data is unethical, that is not what is meant here. Manually altering data in a “data management” sense means opening a data file in a text or spreadsheet editor and altering a data point based off of some (appropriate) reason. For example, there might be a double subject number. A research assistant says that it was human error, so you decide to open one of the subject files and change the subject number in that file manually.</p>
+<p>A better approach would be to first document what change needs to be made (either in a README file or through comments in a script). Second, altering any data points should occur in a data cleaning pipeline (ideally, programatically) so that the change and issue are reproducible. In short, document the problem/issue in your data, as well as the solution!</p>
 </div>
 <div id="saving-results-without-saving-analysis-steps" class="section level3">
 <h3>2). Saving Results without Saving Analysis Steps</h3>
+<p>In line with creating reproducible workflows, saving analysis results for a project without knowing how you obtained those results has the potential of causing future stress and unnecessary re-analysis of the data. For example, using the point-and-click approach to analysis in SPSS and saving <em>only</em> the table outputs (t tests, regressions, correlations) is a deadly sin. While it may be tempting to think that you can remember exactly how you analyze your own data, it might be harder to recall the exact steps you took to do so months, years, or even decades in the future. Even if you use a point-and-click approach in SPSS, you can still save the script and code that SPSS uses “behind the scenes”!</p>
 <hr />
-<p>Last updated on 2017-09-08</p>
+<p>Last updated on 2017-09-11</p>
 </div>
 </div>
 

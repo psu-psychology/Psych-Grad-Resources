@@ -1,5 +1,5 @@
 ---
-title: "Journal Impact Factors"
+title: "Psychology Journal Impact Factors"
 author: "Daniel N. Albohn"
 date: "9/10/2017"
 output: html_document
@@ -9,22 +9,31 @@ editor_options:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-IF <- readr::read_csv('../data/journal_IF.csv')
+options(knitr.table.format = "html")
+library(tidyverse)
+IF <- readr::read_csv('../data/journal_IF.csv') %>% 
+  arrange(., desc(`Impact Factor`))
 ```
 
 Special thanks to the Social Perception and Emotion
 Lab and its researchers for supplying the base statistics
-for this table.
+for this table. Presently, some of the journal website
+links are still broke.
 
 [Read more about impact factors and how to interpret them](http://researchguides.uic.edu/if/impact), or
 a thorough explanation and
 [critique them](https://blogs.scientificamerican.com/information-culture/understanding-the-journal-impact-factor-part-one/).
 
+If a journal you read or submit to frequently is not on this list, consider
+[looking it up](https://jcr.incites.thomsonreuters.com/JCRJournalHomeAction.action?year=&edition=&journal=)
+and adding it to the list!
+
 To update this list, please alter the
 [data file](../data/journal_IF.csv), and then "re-knit" the [Rmarkdown file](journal_IF.Rmd).
 
-```{r echo=FALSE}
-knitr::kable(IF)
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+knitr::kable(IF) %>% 
+  kableExtra::kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 ```
 
 ________________________________________________________

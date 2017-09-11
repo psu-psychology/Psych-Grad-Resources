@@ -63,7 +63,7 @@ A messy file structure can cause frustration at a minimum, and loss of data
 at an extreme. Consider finding a file structure that suits your needs as a
 data scientist and stick to that format for all of your projects. This
 helps keep yourself accountable for each project and what needs to get done.
-In addition, it help your research be reproducible for the future.
+In addition, it helps your research be reproducible for the future.
 
 One example of an organized file structure might be:
 
@@ -96,7 +96,7 @@ One example of an organized file structure might be:
             - article1.pdf
             - ...
 
-### 2). Storing Altered Data Files
+### 2). Storing Altered Data Files / Overwriting Orignal Data File
 While storing altered data files in-and-of itself is not a sin,
 storing manually altered data files as your *only* version of the
 data is a cardinal sin. You should always have an original copy of
@@ -125,13 +125,13 @@ extensions `.txt`, `.csv`, `.tsv`. Proprietary file formats include
 those that are produced by commercial software such as Excel (`.xls` or `.xlsx`),
 MatLab (`.mat`), E-Prime (`.edat`), and SPSS (`.sav`). Having files saved *only*
 in these proprietary formats reduces the number of ways your data can
-be accessed, and by whom it can be accessed by.
+be accessed, and whom can access it.
 
 Additionally, saving data in non-proprietary formats "future proofs" your data.
 Your data is no longer bound to only being accessible through a software that can stopped being
 actively developed or abandoned all together. If you need to share your data 20
 years from now because one of your studies became a new psychological classic,
-but you only have it saved in `.xlsx` form you run the risk of not having a  computer
+but you only have it saved in `.xlsx` form, you run the risk of not having a computer
 that can read that type of file any more because Microsoft went out of business 10 years ago
 (hey, it's a possibility). Essentially, your data is lost!
 
@@ -167,7 +167,8 @@ While falsifying data is unethical, that is not what is meant here. Manually alt
 data in a "data management" sense means opening a data file in a text or spreadsheet
 editor and altering a data point based off of some (appropriate) reason. For example,
 there might be a double subject number. A research assistant says that it was human error,
-so you decide to open one of the subject files and change the subject number in that file.
+so you decide to open one of the subject files and change the subject number in that file
+manually.
 
 A better approach would be to first document what change needs to be made (either in
 a README file or through comments in a script). Second, altering any data points should
