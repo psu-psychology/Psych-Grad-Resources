@@ -18,11 +18,11 @@ IF <- readr::read_csv('../data/journal_IF.csv') %>%
 Special thanks to the Social Perception and Emotion
 Lab and its researchers for supplying the base statistics
 for this table. Presently, some of the journal website
-links are still broke.
+links are still broken.
 
 [Read more about impact factors and how to interpret them](http://researchguides.uic.edu/if/impact), or
 a thorough explanation and
-[critique them](https://blogs.scientificamerican.com/information-culture/understanding-the-journal-impact-factor-part-one/).
+[critique of them](https://blogs.scientificamerican.com/information-culture/understanding-the-journal-impact-factor-part-one/).
 
 If a journal you read or submit to frequently is not on this list, consider
 [looking it up](https://jcr.incites.thomsonreuters.com/JCRJournalHomeAction.action?year=&edition=&journal=)
