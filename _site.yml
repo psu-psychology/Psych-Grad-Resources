@@ -16,6 +16,8 @@ navbar:
         - text: "Additional Resources"
         - text: "Journal Impact Factors"
           href: data/journal_IF.html
+        - text: "RStudio and RMarkdown Tips and Tricks"
+          href: data/RStudio-Markdown-Tips.html
     - text: "Site info"
       href: site-info.html
 output_dir: "docs"
