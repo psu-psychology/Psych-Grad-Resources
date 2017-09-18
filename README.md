@@ -1,18 +1,15 @@
 # Psych-Grad-Resources
-A repository of useful information and resources for graduate students in psychology at Penn State.
+A repository of useful information and resources for graduate students in psychology at Penn State. To
+access the full website, please visit <http://psu-psychology.github.io/Psych-Grad-Resources/>
 
-## Information in this repository:
+## Components
 
-- data
-    - A raw `.csv` file of journal impact factors. Edit this file for adding to the list
+- `docs/`: Folder GitHub pages uses to serve site.
+- `data/`: `.Rmd` and `.html`: components used to build static site.
+- `man`: Journal articles referenced in each document are stored here.
 
-- docs
-    - [Deadly Sins of the Modern Data Scientists](https://cdn.rawgit.com/psu-psychology/Psych-Grad-Resources/4ea67ef4/docs/deadly_sins.html). A review of good practices to keep in mind when collecting,
-    analyzing, and soring data.
-    - [Graduate Resources](https://cdn.rawgit.com/psu-psychology/Psych-Grad-Resources/b3a55fd7/docs/grad_resources.html). A curated list resources for graduate students. Primarily focused on resources
-    for psychological experimentation, analysis, and stimuli manipulation.
-    - [Journal Impact Factors](https://cdn.rawgit.com/psu-psychology/Psych-Grad-Resources/4ea67ef4/docs/journal_IF.html). A table of journal impact factors sorted by field.
-    - Raw `.Rmd` files associated with each doc.
+## Instructions
 
-- man
-    - Journal articles referenced in each document are stored here.
+1. Clone or copy the site locally.
+2. Make any changes to the `.Rmd` files in the `data/` folder and re-knit them using `knitr`.
+3. From the site root directory, run `rmarkdown::render_site()` from your R or RStudio console to generate the HTML, CSS, and JS files. The site resides in `docs/` and may be viewed in any browser.

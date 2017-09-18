@@ -1,0 +1,87 @@
+---
+title: "Resources for Psychology Graduate Students"
+author: "Daniel N. Albohn"
+date: "9/7/2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+You can find the full information for each section on the Penn State psychology GitHub page:
+
+http://bit.ly/psych-grad-resources
+
+The linked repository includes details as to why each Sin is important to keep in mind
+when collecting, analyzing, and storing data. The repository also includes more
+information on each of the software listed below, and links to tutorials.
+
+## Deadly Sins of the Modern Data Scientist
+- Data Collection
+    - Failure to Log Abnormalities Immediately
+    - Failure to Record System Specifications
+    - Using Undescriptive or Uniformative Variable and File Names
+
+- Data Storage
+    - Unstructured File Organization
+    - Storing Altered Data Files / Overwriting Orignal Data File
+    - Altering Data Files Without Documentation
+    - Saving Files in a Proprietary Format
+    - Improper Data Backup and File Versioning
+
+- Data Analysis
+    - Manually Altering Data Point(s)
+    - Saving Results without Saving Analysis Steps
+
+## Resources
+- **Experimental Software**
+    - OpenSesame (http://osdoc.cogsci.nl)
+    - PsychoPy (http://www.psychopy.org)
+    - jsPsych (http://www.jspsych.org)
+    - PsyToolkit (http://www.psytoolkit.org)
+    - Qualtrics (https://pennstate.qualtrics.com/)
+
+- **Statistical & Visualization Software**
+    - R and RStudio (https://cran.r-project.org)
+    - Octave (https://www.gnu.org/software/octave/)
+    - Plotly (https://plot.ly
+    - Tableau (https://www.tableau.com)
+
+- **Text Editors**
+    - ATOM (https://atom.io)
+    - Sublime Text (https://www.sublimetext.com)
+    - LaTex and TexStudio (https://www.latex-project.org)
+
+- **Versioning**
+    - git & GitHub (https://git-scm.com; https://github.com)
+    - Box (https://box.psu.edu)
+
+- **Image/Video Manipulation**
+    - GIMP - Graphical Image Manipulation Program (https://www.gimp.org)
+    - Inkscape (https://inkscape.org/en/)
+    - ImageMagick (https://www.imagemagick.org/script/index.php)
+    - XnConvert (http://www.xnview.com/en/xnconvert/)
+    - ffmpeg (https://www.ffmpeg.org)
+
+- **Citation Managers**
+    - Mendeley (https://www.mendeley.com)
+    - Zotero (https://www.zotero.org)
+    - JabRef (http://www.jabref.org)
+    - Papers (http://www.readcube.com/papers/)
+
+- **Penn State Resources**
+    - PASS and Personal Webspace (Homepage: https://explorer.pass.psu.edu/)
+    - WebApps (https://webapps.psu.edu)
+    - Adobe Creative Cloud Suite (https://www.adobe.psu.edu/creative-cloud/)
+    - Microsoft Office for Students (http://software.psu.edu/news/microsoft-no-cost-software)
+    - Institute for CyberScience Advanced CyberInfrastructure (https://ics.psu.edu/advanced-cyberinfrastructure/)
+
+## Other Resources
+- Penn State Data Science Website (https://psu-psychology.github.io/data-science-and-reproducibility/)
+- Penn State Data Science Google Group (https://groups.google.com/forum/#!forum/psu-psychology-data-science)
+- Penn State Psychology GitHub Repo (https://github.com/psu-psychology)
+- Penn State's 2017 R Bootcamp (https://psu-psychology.github.io/r-bootcamp/)
+- Penn State's QuantDev Tutorials Page (https://quantdev.ssri.psu.edu/tutorials)
+- Programming for Psychologists (https://crumplab.github.io/programmingforpsych/)
+- Data Visualization for Data Science (http://socviz.co/index.html)
