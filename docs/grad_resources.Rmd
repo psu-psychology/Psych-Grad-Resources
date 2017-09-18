@@ -338,6 +338,13 @@ https://webapps.psu.edu
 Provides access to several popular applications (MS Office, MatLab, SAS)
 through your browser.
 
+### Adobe Creative Cloud Suite
+https://www.adobe.psu.edu/creative-cloud/
+
+As a Penn State Student, you have access to download
+and install the Adobe Creative Cloud programs at
+no cost to you. This suit of programs include
+Adobe Acrobat Pro, Photoshop, and Dreamweaver.
 
 ### Penn State Microsoft Office for Students
 http://software.psu.edu/news/microsoft-no-cost-software 
@@ -362,7 +369,9 @@ for connecting to their system.
 - [Penn State Data Science Google Group](https://groups.google.com/forum/#!forum/psu-psychology-data-science)
 - [Penn State Psychology GitHub Repo](https://github.com/psu-psychology)
 - [Penn State's 2017 R Bootcamp](https://psu-psychology.github.io/r-bootcamp/)
+- [Penn State's QuantDev Tutorials Page](https://quantdev.ssri.psu.edu/tutorials)
 - [Programming for Psychologists](https://crumplab.github.io/programmingforpsych/)
+- [Data Visualization for Data Science](http://socviz.co/index.html)
 
 ________________________________________________________
 

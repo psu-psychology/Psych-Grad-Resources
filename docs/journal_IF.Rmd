@@ -15,8 +15,9 @@ IF <- readr::read_csv('../data/journal_IF.csv') %>%
   arrange(., desc(`Impact Factor`))
 ```
 
-Special thanks to the Social Perception and Emotion
-Lab and its researchers for supplying the base statistics
+Special thanks to the
+[Social Perception and Emotion Lab](https://sites.google.com/site/socialviplab/)
+and its researchers for supplying the base statistics
 for this table. Presently, some of the journal website
 links are still broken.
 
@@ -29,7 +30,8 @@ If a journal you read or submit to frequently is not on this list, consider
 and adding it to the list!
 
 To update this list, please alter the
-[data file](../data/journal_IF.csv), and then "re-knit" the [Rmarkdown file](journal_IF.Rmd).
+[data file](../data/journal_IF.csv), and then "re-knit" the [Rmarkdown file](journal_IF.Rmd)
+using R Markdown.
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 knitr::kable(IF) %>% 
