@@ -1,6 +1,6 @@
 # Psych-Grad-Resources
 A repository of useful information and resources for graduate students in psychology at Penn State. To
-access the full website, please visit: 
+access the full website, please visit: <https://psu-psychology.github.io/Psych-Grad-Resources/>
 
 ## Components
 
