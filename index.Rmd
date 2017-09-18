@@ -1,0 +1,17 @@
+---
+title: "Graduate Student Resources"
+---
+
+![](https://www.efficientvineyard.com/wp-content/uploads/2016/04/PS_HOR_RGB_2C.png){width=50%}
+
+
+This website contains a central repository for resources that might be helpful for
+new and current graduate students in psychology at Penn State University. You can
+access individual webpages with additional resources under the dropdown menu at
+the top of this page.
+
+If you would like to add to this repository, you can either follow the instructions for
+cloning and adding to the [GitHub repository](https://github.com/psu-psychology/Psych-Grad-Resources),
+or contact the current maintainer of the repository.
+
+Current maintainer: [Daniel Albohn](dna5021@psu.edu)
