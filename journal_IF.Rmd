@@ -2,7 +2,10 @@
 title: "Psychology Journal Impact Factors"
 author: "Daniel N. Albohn"
 date: "9/10/2017"
-output: html_document
+output:
+  html_document:
+    theme: spacelab
+    css: style.css
 editor_options: 
   chunk_output_type: console
 ---
@@ -11,7 +14,7 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 options(knitr.table.format = "html")
 library(tidyverse)
-IF <- readr::read_csv('../data/journal_IF.csv') %>% 
+IF <- readr::read_csv('data/journal_IF.csv') %>% 
   arrange(., desc(`Impact Factor`))
 ```
 

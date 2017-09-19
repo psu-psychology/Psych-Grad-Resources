@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Daniel N. Albohn" />
+
+
+<title>RStudio &amp; RMarkdown Tips</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+
+.section h2 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h3 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h4 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h5 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h6 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Resources for Psychology Graduate Students</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-university"></span>
+     
+    Grad Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Data Management and Software Resources</li>
+    <li>
+      <a href="deadly_sins.html">Deadly Sins of the Modern Data Scientist</a>
+    </li>
+    <li>
+      <a href="grad_resources.html">Software and Experimental Resources</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Additional Resources</li>
+    <li>
+      <a href="journal_IF.html">Journal Impact Factors</a>
+    </li>
+    <li>
+      <a href="RStudio-Markdown-Tips.html">RStudio and R Markdown Tips and Tricks</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="site-info.html">Site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">RStudio &amp; RMarkdown Tips</h1>
+<h4 class="author"><em>Daniel N. Albohn</em></h4>
+<h4 class="date"><em>9/14/2017</em></h4>
+
+</div>
+
+
+<div id="rstudio" class="section level2">
+<h2>RStudio</h2>
+<div id="keyboard-shortcuts" class="section level3">
+<h3>Keyboard Shortcuts</h3>
+<p>You can find shortcuts in the dropdown menu “Help” -&gt; “Keyboard Shortcuts Help”, or <a href="https://support.rstudio.com/hc/en-us/articles/200711853-Keyboard-Shortcuts">online</a></p>
+<p>I want to draw your attention to these shortcuts, in particular, as they are use quite often:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Description</th>
+<th align="left">Windows</th>
+<th align="left">Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Keyboard help</td>
+<td align="left"><code>Alt</code>+<code>Shift</code>+<code>k</code></td>
+<td align="left"><code>option</code>+<code>Shift</code>+<code>k</code></td>
+</tr>
+<tr class="even">
+<td align="left">Insert assignment operator <code>&lt;-</code></td>
+<td align="left"><code>Alt</code>+<code>-</code></td>
+<td align="left"><code>option</code>+<code>-</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Insert pipe operator <code>%&gt;%</code></td>
+<td align="left"><code>Ctrl</code>+<code>Shift</code>+<code>m</code></td>
+<td align="left"><code>Cmd</code>+<code>Shift</code>+<code>m</code></td>
+</tr>
+<tr class="even">
+<td align="left">Insert multiple cursurs</td>
+<td align="left"><code>Ctrl</code>+<code>Alt</code>+ <code>L Mouse</code></td>
+<td align="left"><code>Ctrl</code>+<code>option</code>+ <code>L Mouse</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Insert code chunk <code>{r}</code></td>
+<td align="left"><code>Ctrl</code>+<code>Alt</code>+ <code>i</code></td>
+<td align="left"><code>Ctrl</code>+<code>option</code>+ <code>i</code></td>
+</tr>
+<tr class="even">
+<td align="left">Comment out lines <code>#</code></td>
+<td align="left"><code>Ctrl</code>+<code>Shift</code>+<code>c</code></td>
+<td align="left"><code>Cmd</code>+<code>Shift</code>+<code>c</code></td>
+</tr>
+<tr class="odd">
+<td align="left">Search active document</td>
+<td align="left"><code>Ctrl</code>+<code>f</code></td>
+<td align="left"><code>Cmd</code>+<code>f</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="rmarkdown" class="section level2">
+<h2>RMarkdown</h2>
+<p>RMarkdown documents begin with a <code>yaml</code> header which passes arguments to <code>pandoc</code> (the program that creates the document). The options that can be specified in the <code>yaml</code> header are document-specific. Some arguments that exist for all types of documents include <code>title</code>, <code>author</code>, <code>date</code>, and <code>output</code>.</p>
+<ul>
+<li><a href="http://rmarkdown.rstudio.com/html_document_format.html">Some html options</a></li>
+<li><a href="http://rmarkdown.rstudio.com/pdf_document_format.html">Some PDF options</a></li>
+<li><a href="http://rmarkdown.rstudio.com/word_document_format.html">Some Word options</a></li>
+</ul>
+<div id="overview" class="section level3">
+<h3>Overview</h3>
+<p>You can see a cheatsheet for RMarkdown under “Help” -&gt; “Cheetsheets” -&gt; “R Markdown Cheetsheet”.</p>
+<p>Some useful things to know:</p>
+<ul>
+<li>Enclosing text in single * <em>italicizes</em><br />
+</li>
+<li>Enclosing text in douuble * <strong>bolds</strong><br />
+</li>
+<li>Enclosing text in triple * <strong><em>bold italics</em></strong><br />
+</li>
+<li><p>Prefacing something with a \ means “do not evaluate”</p></li>
+<li><p>Adding a break between lines starts a new paragraph</p></li>
+<li>Enclosing text in backticks ` <code>code formats</code><br />
+</li>
+<li><p>Starting text with a &gt; creates a…</p></li>
+</ul>
+<blockquote>
+<p>…block quote paragraph that can span multiple lines</p>
+</blockquote>
+<ul>
+<li>Enclosing text with ^ creates a superscript<sup>2</sup><br />
+</li>
+<li>Enclosing text with ~ creates a subscript<sub>2</sub><br />
+</li>
+<li><p>Enclosing text with double ~~ creates a <del>strikethrough</del></p></li>
+<li><p>Code in RMarkdown is wrapped in three backticks ` followed at the beginning by {r}</p></li>
+</ul>
+<p>```{r}</p>
+<p><em>Code would go here.</em></p>
+<p>```</p>
+<ul>
+<li>Code in-line is inserted with one backtick `and ending with another backtick `
+<ul>
+<li>` r <em>code here</em> `</li>
+<li>Allows for dynamic content, like the current data and time is <em>2017-09-18 23:03:51</em></li>
+</ul></li>
+<li>Enclosing text with brackets “[” and then “(” links to other websites/documents
+<ul>
+<li>This is a <a href="www.psu.edu">link</a></li>
+</ul></li>
+<li>Starting text with - creates a bulleted list
+<ul>
+<li>Indenting four spaces and then using - creates a sub-bullet</li>
+</ul></li>
+<li>Starting text with a number and period (1.) creates an ordered list
+<ol style="list-style-type: decimal">
+<li>My point 1</li>
+<li>My point 2</li>
+</ol></li>
+<li>Starting text with up to six # creates differently formated headers:</li>
+</ul>
+</div>
+</div>
+<div id="header-i" class="section level1">
+<h1>Header I</h1>
+<div id="header-ii" class="section level2">
+<h2>Header II</h2>
+<div id="header-iii" class="section level3">
+<h3>Header III</h3>
+<div id="header-iv" class="section level4">
+<h4>Header IV</h4>
+<div id="header-v" class="section level5">
+<h5>Header V</h5>
+<div id="header-vi" class="section level6">
+<h6>Header VI</h6>
+<div id="header-vii-does-not-work" class="section level7">
+<p>Header VII (does not work)</p>
+<ul>
+<li>Placing an image is done by starting with a !<a href="path/to/file"></a>
+<ul>
+<li>The path can either be a local path or a website</li>
+</ul></li>
+</ul>
+<p>Just an image:</p>
+<div class="figure">
+<img src="https://i.pinimg.com/564x/7c/6c/44/7c6c441d09e7139963e22d9f944a8104--penn-state-logo-penn-state-university.jpg" />
+
+</div>
+<p>You can resize an image by including curly brackets { at the end and a height/width specifer within them (e.g., width=50%):</p>
+<div class="figure">
+<img src="https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/21272395_1620613354657616_1169065023125134461_n.jpg?oh=7f3c291d74946b40e133e16b26ae8995&amp;oe=5A4529EE" style="width:50.0%" />
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<p>Copyright &copy; Penn State Psychology. All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

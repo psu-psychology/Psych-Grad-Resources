@@ -2,11 +2,12 @@
 title: "Resources for Psychology Graduate Students"
 author: "Daniel N. Albohn"
 date: "9/7/2017"
-output:
+output: 
   html_document:
     theme: spacelab
+    css: style.css
     toc: true
-    toc_depth: 3
+    toc_depth: 2
 ---
 
 ```{r setup, include=FALSE}
@@ -156,9 +157,8 @@ and visualization. Offers an online component for
 sharing visualizations with collaborators.
 
 
-## Additional Software
-### Text Editors
-#### ATOM
+## Text Editors
+### ATOM
 https://atom.io
 
 An opensource text editor with many extensions. You can run
@@ -167,7 +167,7 @@ and create a reproducible workflow using just ATOM and its
 extensions.
 
 
-#### Sublime Text
+### Sublime Text
 https://www.sublimetext.com
 
 A text editor that is similar in scope to ATOM, provides
@@ -175,7 +175,7 @@ lots of useful extensions, but is not as actively maintained
 or developed.
 
 
-#### LaTex and TexStudio
+### LaTex and TexStudio
 https://www.latex-project.org  
 http://www.texstudio.org
 
@@ -188,8 +188,8 @@ TexStudio is one of many programs designed specifically for
 writing and creating LaTex documents.
 
 
-### Versioning
-#### git & GitHub
+## Versioning
+### git & GitHub
 Homepage: https://git-scm.com  
 Homepage: https://github.com
 
@@ -208,7 +208,7 @@ If you prefer to read, GitHub has provided an excellent
 [introductory tutorial](https://help.github.com/articles/git-and-github-learning-resources/).
 
 
-#### Box
+### Box
 https://box.psu.edu
 
 Penn State students have unlimited storage on Box with
@@ -220,8 +220,8 @@ rules and regulations for storing sensitive data on Box
 [here](http://box.psu.edu/rules-for-storing-protected-health-information-in-box/).
 
 
-### Image Manipulation
-#### GIMP - Graphical Image Manipulation Program
+## Image Manipulation
+### GIMP - Graphical Image Manipulation Program
 https://www.gimp.org
 
 GIMP is an image editor that can be considered a
@@ -231,7 +231,7 @@ plugins that allow extending GIMP beyond just
 simple-to-moderate image editing.
 
 
-#### Inkscape
+### Inkscape
 https://inkscape.org/en/
 
 Program for creating, editing, and manipulating vector graphics
@@ -245,7 +245,7 @@ even when changing image size/dimensions (e.g., enlarging or shrinking
 an image to fit a presentation).
 
 
-#### ImageMagick
+### ImageMagick
 https://www.imagemagick.org/script/index.php
 
 Program to create, edit, compose, or convert bitmap images.
@@ -254,7 +254,7 @@ download extensions to integrate with other languages such as
 R, python, or C++.
 
 
-#### XnConvert
+### XnConvert
 http://www.xnview.com/en/xnconvert/
 
 A program that allows for the batch manipulation of images. Useful
@@ -262,7 +262,7 @@ if you have many bitmap photos that you need to grayscale, resize,
 or crop in a similar manner, for example.
 
 
-#### ffmpeg
+### ffmpeg
 https://www.ffmpeg.org
 
 Command line tools to record, convert and stream audio and video.
@@ -270,12 +270,12 @@ This program has a learning curve, but is also very
 powerful. Useful for batch processing videos.
 
 
-### Citation Managers
+## Citation Managers
 [Comprehensive comparison](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software) 
 of different softwares. Below are a few of the more popular programs
 and personal favorites.
 
-#### Mendeley
+### Mendeley
 https://www.mendeley.com
 
 A reference manager to organize, sort, and annotate all of your academic
@@ -285,7 +285,7 @@ you can automatically insert and appropriate cite research as you
 write.
 
 
-#### Zotero
+### Zotero
 https://www.zotero.org
 
 An alternative reference manager. Integrates well with your web browser
@@ -294,7 +294,7 @@ and provides ability to insert citations into various documents (Word,
 emails, etc.).
 
 
-#### JabRef
+### JabRef
 http://www.jabref.org
 
 A bibliography reference manager that is formatted in BibTex, the standard
@@ -304,7 +304,7 @@ also has the ability to automatically search for the full text of an
 article and import it.
 
 
-#### Papers
+### Papers
 http://www.readcube.com/papers/
 
 A non-free ($49.99 for students) PDF and reference manager. Arguably,

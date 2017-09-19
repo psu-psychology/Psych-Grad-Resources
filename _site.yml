@@ -9,15 +9,15 @@ navbar:
       menu:
         - text: "Data Management and Software Resources"
         - text: "Deadly Sins of the Modern Data Scientist"
-          href: data/deadly_sins.html
+          href: deadly_sins.html
         - text: "Software and Experimental Resources"
-          href: data/grad_resources.html
+          href: grad_resources.html
         - text: "---------"
         - text: "Additional Resources"
         - text: "Journal Impact Factors"
-          href: data/journal_IF.html
+          href: journal_IF.html
         - text: "RStudio and R Markdown Tips and Tricks"
-          href: data/RStudio-Markdown-Tips.html
+          href: RStudio-Markdown-Tips.html
     - text: "Site info"
       href: site-info.html
 output_dir: "docs"

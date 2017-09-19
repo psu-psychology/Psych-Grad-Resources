@@ -3,10 +3,14 @@ A repository of useful information and resources for graduate students in psycho
 access the full website, please visit: <https://psu-psychology.github.io/Psych-Grad-Resources/>
 
 ## Components
+In the main repository folder are the raw `.Rmd` and `.html` components used to build static site,
+plus some extra goodies (`footer.html`,`style.css`) for making the site look better.
 
 - `docs/`: Folder GitHub pages uses to serve site.
-- `data/`: `.Rmd` and `.html`: components used to build static site.
+- `data/`: Folder contains a raw data file of journal impact factors and a handout version of the
+static webpages.
 - `man`: Journal articles referenced in each document are stored here.
+- `R`: R scripts for (re-)producing the site and static webpages quickly.
 
 ## Instructions
 

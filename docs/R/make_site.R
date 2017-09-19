@@ -1,0 +1,6 @@
+rmarkdown::render('index.Rmd', output_format = 'html_document')
+rmarkdown::render('grad_resources.Rmd', output_format = 'html_document')
+rmarkdown::render('journal_IF.Rmd', output_format = 'html_document')
+rmarkdown::render('deadly_sins.Rmd', output_format = 'html_document')
+rmarkdown::render('RStudio-Markdown-Tips.Rmd', output_format = 'html_document')
+rmarkdown::render_site()

@@ -5,6 +5,7 @@ date: "9/14/2017"
 output:
   html_document:
     theme: spacelab
+    css: style.css
 editor_options: 
   chunk_output_type: console
 ---

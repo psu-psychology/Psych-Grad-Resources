@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+<meta name="author" content="Daniel N. Albohn" />
+
+
+<title>Resources for Psychology Graduate Students</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 52px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+
+.section h2 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h3 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h4 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h5 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+.section h6 {
+  padding-top: 57px;
+  margin-top: -57px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Resources for Psychology Graduate Students</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-university"></span>
+     
+    Grad Resources
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Data Management and Software Resources</li>
+    <li>
+      <a href="deadly_sins.html">Deadly Sins of the Modern Data Scientist</a>
+    </li>
+    <li>
+      <a href="grad_resources.html">Software and Experimental Resources</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Additional Resources</li>
+    <li>
+      <a href="journal_IF.html">Journal Impact Factors</a>
+    </li>
+    <li>
+      <a href="RStudio-Markdown-Tips.html">RStudio and R Markdown Tips and Tricks</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="site-info.html">Site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Resources for Psychology Graduate Students</h1>
+<h4 class="author"><em>Daniel N. Albohn</em></h4>
+<h4 class="date"><em>9/7/2017</em></h4>
+
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#experimental-software">Experimental Software</a></li>
+<li><a href="#statistical-visualization-software">Statistical &amp; Visualization Software</a></li>
+<li><a href="#text-editors">Text Editors</a></li>
+<li><a href="#versioning">Versioning</a></li>
+<li><a href="#image-manipulation">Image Manipulation</a></li>
+<li><a href="#citation-managers">Citation Managers</a></li>
+<li><a href="#penn-state-resources">Penn State Resources</a></li>
+<li><a href="#other-resources">Other Resources</a></li>
+</ul>
+</div>
+
+<p>All resources described in this document are free and platform agnostic unless otherwise noted. This is not an exhaustive list by any means. It is meant to provide a jump start on resources available to graduate students who are conducting psychological research at Penn State.</p>
+<div id="experimental-software" class="section level2">
+<h2>Experimental Software</h2>
+<div id="opensesame" class="section level3">
+<h3>OpenSesame</h3>
+<p>Homepage: <a href="http://osdoc.cogsci.nl" class="uri">http://osdoc.cogsci.nl</a><br />
+GitHub: <a href="https://github.com/smathot/OpenSesame" class="uri">https://github.com/smathot/OpenSesame</a></p>
+<p>OpenSesame is a python-based program for creating experiments. It has a number of capabilities built in, such as image and sound presentation, keyboard, mouse, and voice response, and questionnaire forms. OpenSesame also has the ability to be (essentially) endlessly extended with custom python scripts.</p>
+<p>OpenSesame uses a graphical user interface (GUI) for experiment building, which means you can use point-and-click to build your experiments. Extending OpenSesame with python requires scripting code.</p>
+<div id="tutorials-and-resources" class="section level4">
+<h4>Tutorials and Resources</h4>
+<ul>
+<li><a href="http://osdoc.cogsci.nl/3.1/tutorials/beginner/">Beginner’s Tutorial</a></li>
+<li><a href="http://osdoc.cogsci.nl/3.1/tutorials/advanced/">Advanced Tutorial</a></li>
+<li><a href="http://forum.cogsci.nl/index.php?p=/categories/opensesame">Forum</a></li>
+</ul>
+</div>
+</div>
+<div id="psychopy" class="section level3">
+<h3>PsychoPy</h3>
+<p>Homepage: <a href="http://www.psychopy.org" class="uri">http://www.psychopy.org</a><br />
+Github: <a href="https://github.com/psychopy/psychopy" class="uri">https://github.com/psychopy/psychopy</a></p>
+<p>PsychoPy is a python-based program for experiment building. It has both a GUI and a code editor. Unlike OpenSesame, PsychoPy uses specific python libraries built specifically for behavioral experimentation. Thus, it is more heavily based in programming, but also allows for greater manipulation, control, and extension. This program may be better if the experiment is abnormal or complex. PsychoPy does offer a GUI for building experiements, but fine-tuned control requires python coding knowlede using its “coding editor”.</p>
+<p>The developers of PsychoPy are also attempting to make experiments built using this program deployable online. As of now, this is considered in-development and experimental.</p>
+<div id="tutorials-and-resources-1" class="section level4">
+<h4>Tutorials and Resources</h4>
+<ul>
+<li><a href="http://www.psychopy.org/documentation.html">Documentation and Tutorials</a></li>
+<li><a href="https://discourse.psychopy.org">Forum</a></li>
+</ul>
+</div>
+</div>
+<div id="jspsych" class="section level3">
+<h3>jsPsych</h3>
+<p>Homepage: <a href="http://www.jspsych.org" class="uri">http://www.jspsych.org</a><br />
+GitHub: <a href="https://github.com/jspsych/jsPsych" class="uri">https://github.com/jspsych/jsPsych</a></p>
+<p>A JavaScript library for creating experiments. It has no GUI, so all experiments are coded in HTML files. It has the ability to deploy experiment applications online (if you have a server). PsychoPy uses jsPsych as the backend for deploying experiments online.</p>
+<div id="tutorials-and-resources-2" class="section level4">
+<h4>Tutorials and Resources</h4>
+<ul>
+<li><a href="http://docs.jspsych.org/tutorials/rt-task/#summary-of-tutorial-content">Tutorial</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/jspsych">Forum</a></li>
+</ul>
+</div>
+</div>
+<div id="psytoolkit" class="section level3">
+<h3>PsyToolkit</h3>
+<p><a href="http://www.psytoolkit.org" class="uri">http://www.psytoolkit.org</a></p>
+<p>A service that provides the ability to create simple online experiments and questionnaires. The maintainer of this service also provides free server use for data collection and storage. There is an <a href="../man/stoet2017-top-psytoolkit.pdf">academic paper</a> describing the service.</p>
+</div>
+<div id="qualtrics" class="section level3">
+<h3>Qualtrics</h3>
+<p><a href="https://pennstate.qualtrics.com/" class="uri">https://pennstate.qualtrics.com/</a></p>
+<p>As a Penn State graduate student you are entitled to a free Qualtrics account that allows for up to two active surveys at any time.</p>
+<div id="tutorials-and-resources-3" class="section level4">
+<h4>Tutorials and Resources</h4>
+<ul>
+<li><a href="https://www.qualtrics.com/support/survey-platform/getting-started/step-1-beginning-build/">Tutorial</a></li>
+<li><a href="https://sites.google.com/site/complexcognitionbgsu/data-collection-software/qualtricsadvanced">Advanced Tutorial</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="statistical-visualization-software" class="section level2">
+<h2>Statistical &amp; Visualization Software</h2>
+<div id="r-and-rstudio" class="section level3">
+<h3>R and RStudio</h3>
+<p><a href="https://cran.r-project.org" class="uri">https://cran.r-project.org</a><br />
+<a href="https://www.rstudio.com" class="uri">https://www.rstudio.com</a></p>
+<p>R is a programming language used for statistical analyses and graphics. R’s strength is its incredibly diverse number of packages that are available for download. Almost any type of analysis for any type of data in any format can be analyzed using a combination of R and one of its packages. You can browse R packages <a href="https://cran.r-project.org/web/packages/available_packages_by_name.html">here</a> to get a sense for the amount available.</p>
+<p>RStudio is an Integrated Development Environment (IDE) for R. It enhances the standard R program by providing an easy and visually appealing way to organize R code, R files, projects, and R itself into a single space. You can run <a href="rstudio.aci.ics.psu.edu">RStudio in your browser</a> through a server operated by Penn State’s <a href="https://ics.psu.edu">Institute for CyberScience</a>.</p>
+<div id="tutorials-and-resources-4" class="section level4">
+<h4>Tutorials and Resources</h4>
+<ul>
+<li><a href="https://www.rstudio.com/online-learning/">Tutorials for R by RStudio</a></li>
+<li><a href="http://r4ds.had.co.nz">R for Data Scince EBook</a></li>
+<li><a href="http://personality-project.org/r/">The Personality Project’s Guide to R</a></li>
+<li><a href="https://www.psychologicalscience.org/observer/learning-to-work-with-r">Learning to Work with R by Association for Psychological Science</a></li>
+<li><a href="https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R">A Psychologist’s Guide to R</a></li>
+</ul>
+</div>
+</div>
+<div id="octave" class="section level3">
+<h3>Octave</h3>
+<p><a href="https://www.gnu.org/software/octave/" class="uri">https://www.gnu.org/software/octave/</a></p>
+<p>Powerful mathematics-oriented syntax with built-in plotting and visualization tools. A free alternative to Matlab. Most Matlab scripts can be run using this software.</p>
+</div>
+<div id="plotly" class="section level3">
+<h3>Plotly</h3>
+<p><a href="https://plot.ly" class="uri">https://plot.ly</a></p>
+<p>Plotly is a service for creating interactive data visualization. The service makes it easy to share these visualizations online with others. It also has an excellent R and python extension for transforming visualizations your create in these programs into interactive visualizations.</p>
+</div>
+<div id="tableau" class="section level3">
+<h3>Tableau</h3>
+<p><a href="https://www.tableau.com" class="uri">https://www.tableau.com</a></p>
+<p>Another service for interactive data exploration and visualization. Offers an online component for sharing visualizations with collaborators.</p>
+</div>
+</div>
+<div id="text-editors" class="section level2">
+<h2>Text Editors</h2>
+<div id="atom" class="section level3">
+<h3>ATOM</h3>
+<p><a href="https://atom.io" class="uri">https://atom.io</a></p>
+<p>An opensource text editor with many extensions. You can run code from a variety of languages, browse files on your system, and create a reproducible workflow using just ATOM and its extensions.</p>
+</div>
+<div id="sublime-text" class="section level3">
+<h3>Sublime Text</h3>
+<p><a href="https://www.sublimetext.com" class="uri">https://www.sublimetext.com</a></p>
+<p>A text editor that is similar in scope to ATOM, provides lots of useful extensions, but is not as actively maintained or developed.</p>
+</div>
+<div id="latex-and-texstudio" class="section level3">
+<h3>LaTex and TexStudio</h3>
+<p><a href="https://www.latex-project.org" class="uri">https://www.latex-project.org</a><br />
+<a href="http://www.texstudio.org" class="uri">http://www.texstudio.org</a></p>
+<p>LaTex is a typesetting program language for technical and scientific documentation, manuscripts, articles, and books. It has many useful functions for providing high quality style, equations, and references for these types of documents.</p>
+<p>TexStudio is one of many programs designed specifically for writing and creating LaTex documents.</p>
+</div>
+</div>
+<div id="versioning" class="section level2">
+<h2>Versioning</h2>
+<div id="git-github" class="section level3">
+<h3>git &amp; GitHub</h3>
+<p>Homepage: <a href="https://git-scm.com" class="uri">https://git-scm.com</a><br />
+Homepage: <a href="https://github.com" class="uri">https://github.com</a></p>
+<p><code>git</code> is a program that tracks “versioning,” or how a document changes over time. This is an important part of good data science (<a href="deadly_sins.html">check out why here</a>). <code>git</code> is a command line program. GitHub is a service that provides a GUI for git, as well as a service for syncing your versioned projects across devices.</p>
+<p>Students and teachers can get a free <a href="https://education.github.com">GitHub pro account</a>. Pro accounts allow your repositories (repos) to be private.</p>
+<p>Beginners can get to know <code>git</code> in this <a href="https://try.github.io/levels/1/challenges/1">interactive tutorial</a>. If you prefer to read, GitHub has provided an excellent <a href="https://help.github.com/articles/git-and-github-learning-resources/">introductory tutorial</a>.</p>
+</div>
+<div id="box" class="section level3">
+<h3>Box</h3>
+<p><a href="https://box.psu.edu" class="uri">https://box.psu.edu</a></p>
+<p>Penn State students have unlimited storage on Box with their PSU account. Box has partnered with Penn State and the Office of Research Protections to allow for resaerch data to be stored on Box, even storage of Protected Health Information (i.e., sensitive data). You can read more about the rules and regulations for storing sensitive data on Box <a href="http://box.psu.edu/rules-for-storing-protected-health-information-in-box/">here</a>.</p>
+</div>
+</div>
+<div id="image-manipulation" class="section level2">
+<h2>Image Manipulation</h2>
+<div id="gimp---graphical-image-manipulation-program" class="section level3">
+<h3>GIMP - Graphical Image Manipulation Program</h3>
+<p><a href="https://www.gimp.org" class="uri">https://www.gimp.org</a></p>
+<p>GIMP is an image editor that can be considered a free alternative to PhotoShop. Because GIMP is opensource and community-driven, it has a lot of plugins that allow extending GIMP beyond just simple-to-moderate image editing.</p>
+</div>
+<div id="inkscape" class="section level3">
+<h3>Inkscape</h3>
+<p><a href="https://inkscape.org/en/" class="uri">https://inkscape.org/en/</a></p>
+<p>Program for creating, editing, and manipulating vector graphics (e.g., <code>.svg</code>, <code>.pdf</code>). <a href="https://en.wikipedia.org/wiki/Vector_graphics">Vector graphics</a> are images based on location, position, and attributes of points in an an image, rather than pixels. This allows for a vector graphic to be of much higher quality than a bitmap (e.g., <code>.jpg</code>,<code>.png</code>,<code>.tiff</code>). Thus, vector graphics maintain their resolution and graphical positions even when changing image size/dimensions (e.g., enlarging or shrinking an image to fit a presentation).</p>
+</div>
+<div id="imagemagick" class="section level3">
+<h3>ImageMagick</h3>
+<p><a href="https://www.imagemagick.org/script/index.php" class="uri">https://www.imagemagick.org/script/index.php</a></p>
+<p>Program to create, edit, compose, or convert bitmap images. Typically this is done from the command line, but you can download extensions to integrate with other languages such as R, python, or C++.</p>
+</div>
+<div id="xnconvert" class="section level3">
+<h3>XnConvert</h3>
+<p><a href="http://www.xnview.com/en/xnconvert/" class="uri">http://www.xnview.com/en/xnconvert/</a></p>
+<p>A program that allows for the batch manipulation of images. Useful if you have many bitmap photos that you need to grayscale, resize, or crop in a similar manner, for example.</p>
+</div>
+<div id="ffmpeg" class="section level3">
+<h3>ffmpeg</h3>
+<p><a href="https://www.ffmpeg.org" class="uri">https://www.ffmpeg.org</a></p>
+<p>Command line tools to record, convert and stream audio and video. This program has a learning curve, but is also very powerful. Useful for batch processing videos.</p>
+</div>
+</div>
+<div id="citation-managers" class="section level2">
+<h2>Citation Managers</h2>
+<p><a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">Comprehensive comparison</a> of different softwares. Below are a few of the more popular programs and personal favorites.</p>
+<div id="mendeley" class="section level3">
+<h3>Mendeley</h3>
+<p><a href="https://www.mendeley.com" class="uri">https://www.mendeley.com</a></p>
+<p>A reference manager to organize, sort, and annotate all of your academic articles. Provides cloud storage to sync libraries across devices. It also integrates with Microsoft Word and LibreOffice via plugins so you can automatically insert and appropriate cite research as you write.</p>
+</div>
+<div id="zotero" class="section level3">
+<h3>Zotero</h3>
+<p><a href="https://www.zotero.org" class="uri">https://www.zotero.org</a></p>
+<p>An alternative reference manager. Integrates well with your web browser to easily store references from the web. Syncs library across devices, and provides ability to insert citations into various documents (Word, emails, etc.).</p>
+</div>
+<div id="jabref" class="section level3">
+<h3>JabRef</h3>
+<p><a href="http://www.jabref.org" class="uri">http://www.jabref.org</a></p>
+<p>A bibliography reference manager that is formatted in BibTex, the standard way LaTex documents cite bibliographies/references. Because of this, it works particularly well with TexStudio for an optimized workflow. It also has the ability to automatically search for the full text of an article and import it.</p>
+</div>
+<div id="papers" class="section level3">
+<h3>Papers</h3>
+<p><a href="http://www.readcube.com/papers/" class="uri">http://www.readcube.com/papers/</a></p>
+<p>A non-free ($49.99 for students) PDF and reference manager. Arguably, (in my opinion) the best integration of a reference and PDF file manager. It is easy to use and integrates with both Microsoft Word and LaTex seamlessly.</p>
+</div>
+</div>
+<div id="penn-state-resources" class="section level2">
+<h2>Penn State Resources</h2>
+<div id="pass-and-personal-webspace" class="section level3">
+<h3>PASS and Personal Webspace</h3>
+<p>Homepage: <a href="https://explorer.pass.psu.edu/" class="uri">https://explorer.pass.psu.edu/</a><br />
+Homepage: <a href="http://personal.psu.edu/" class="uri">http://personal.psu.edu/</a></p>
+<p>Personal webspace provided by Penn State to host files. Must <a href="https://www.work.psu.edu/webspace/">apply</a> for webspace.</p>
+<p>Your personal webspace has the ability to host files accessible either to just you (<code>www_protected/</code>) or the world (<code>www/</code>). If you upload HTML files, you can host dynamic web content. Theoretically, you can code experiments in HTML and host them on your personal webspace. For example, see a working <a href="http://php.scripts.psu.edu/dna5021/cyberball/index.htm">example</a> of the <a href="https://cyberball.wikispaces.com">CyberBall</a> task on my webspace.</p>
+</div>
+<div id="webapps" class="section level3">
+<h3>WebApps</h3>
+<p><a href="https://webapps.psu.edu" class="uri">https://webapps.psu.edu</a></p>
+<p>Provides access to several popular applications (MS Office, MatLab, SAS) through your browser.</p>
+</div>
+<div id="adobe-creative-cloud-suite" class="section level3">
+<h3>Adobe Creative Cloud Suite</h3>
+<p><a href="https://www.adobe.psu.edu/creative-cloud/" class="uri">https://www.adobe.psu.edu/creative-cloud/</a></p>
+<p>As a Penn State Student, you have access to download and install the Adobe Creative Cloud programs at no cost to you. This suit of programs include Adobe Acrobat Pro, Photoshop, and Dreamweaver.</p>
+</div>
+<div id="penn-state-microsoft-office-for-students" class="section level3">
+<h3>Penn State Microsoft Office for Students</h3>
+<p><a href="http://software.psu.edu/news/microsoft-no-cost-software" class="uri">http://software.psu.edu/news/microsoft-no-cost-software</a></p>
+<p>As a full time Penn State student, you have the opportunity to receive Microsoft Office (for both Windows and Macs) and Microsoft Windows 10 for free. Instructions are provided at the link above.</p>
+</div>
+<div id="institute-for-cyberscience-advanced-cyberinfrastructure" class="section level3">
+<h3>Institute for CyberScience Advanced CyberInfrastructure</h3>
+<p><a href="https://ics.psu.edu/advanced-cyberinfrastructure/" class="uri">https://ics.psu.edu/advanced-cyberinfrastructure/</a></p>
+<p>Provides advanced computing needs for researchers that require specialized and/or high-performance computing. They maintain a <a href="https://ics.psu.edu/advanced-cyberinfrastructure/support/software/">variety of programs</a>, and offer a <a href="https://ics.psu.edu/advanced-cyberinfrastructure/support/tutorials/">tutorial</a> for connecting to their system.</p>
+</div>
+</div>
+<div id="other-resources" class="section level2">
+<h2>Other Resources</h2>
+<ul>
+<li><a href="https://psu-psychology.github.io/data-science-and-reproducibility/">Penn State Data Science Website</a></li>
+<li><a href="https://groups.google.com/forum/#!forum/psu-psychology-data-science">Penn State Data Science Google Group</a></li>
+<li><a href="https://github.com/psu-psychology">Penn State Psychology GitHub Repo</a></li>
+<li><a href="https://psu-psychology.github.io/r-bootcamp/">Penn State’s 2017 R Bootcamp</a></li>
+<li><a href="https://quantdev.ssri.psu.edu/tutorials">Penn State’s QuantDev Tutorials Page</a></li>
+<li><a href="https://crumplab.github.io/programmingforpsych/">Programming for Psychologists</a></li>
+<li><a href="http://socviz.co/index.html">Data Visualization for Data Science</a></li>
+</ul>
+<hr />
+<p>Last updated on 2017-09-18</p>
+</div>
+
+<p>Copyright &copy; Penn State Psychology. All rights reserved.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
