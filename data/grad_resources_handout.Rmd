@@ -9,9 +9,13 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-You can find the full information for each section on the Penn State psychology GitHub page:
+You can find the full information for each section on the website:
 
-http://bit.ly/psych-grad-resources
+http://bit.ly/psych_grad_resources
+
+of on Penn State psychology GitHub page:
+
+http://bit.ly/psych-grad-resources_github
 
 The linked repository includes details as to why each Sin is important to keep in mind
 when collecting, analyzing, and storing data. The repository also includes more
