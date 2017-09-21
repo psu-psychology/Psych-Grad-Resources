@@ -29,9 +29,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [Data Sharing Template](https://github.com/psu-psychology/data-sharing-template)
 
-- [CRAN Task View: Reproducable Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+- [CRAN Task View: Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
 
-- [rOpenSci: Using R to facilitate Reproducable Research](https://github.com/ropensci/rrrpkg)
+- [rOpenSci: Using R to facilitate Reproducible Research](https://github.com/ropensci/rrrpkg)
 
 
 ________________________________________________________
