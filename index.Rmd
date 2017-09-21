@@ -18,4 +18,10 @@ If you would like to add to this repository, you can either follow the instructi
 cloning and adding to the [GitHub repository](https://github.com/psu-psychology/Psych-Grad-Resources),
 or contact the current maintainer of the repository.
 
-Current maintainer: [Daniel Albohn](dna5021@psu.edu)
+Current maintainer(s): 
+
+[Daniel Albohn](www.sites.psu.edu/albohn)
+Email: [dna5021@psu.edu](dna5021@psu.edu)
+GitHub: [www.github.com/d-bohn](www.github.com/d-bohn)
+
+

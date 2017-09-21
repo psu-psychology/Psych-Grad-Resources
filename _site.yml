@@ -18,6 +18,7 @@ navbar:
           href: journal_IF.html
         - text: "RStudio and R Markdown Tips and Tricks"
           href: RStudio-Markdown-Tips.html
+  right:
     - text: "Site info"
       href: site-info.html
 output_dir: "docs"
