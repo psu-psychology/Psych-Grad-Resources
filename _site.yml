@@ -18,13 +18,15 @@ navbar:
           href: journal_IF.html
         - text: "RStudio and R Markdown Tips and Tricks"
           href: RStudio-Markdown-Tips.html
+        - text: "Reproducible Research"
+          href: reproduce_research.html
   right:
     - text: "Site info"
       href: site-info.html
 output_dir: "docs"
 output:
   html_document:
-    theme: cosmo
+    theme: spacelab
     highlight: textmate
     include:
       after_body: footer.html

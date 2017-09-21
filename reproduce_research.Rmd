@@ -1,0 +1,38 @@
+---
+title: "Reproducible Research"
+author: "Daniel N. Albohn"
+date: "9/21/2017"
+output: 
+  html_document:
+    theme: spacelab
+    css: style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Understanding Replication and Reproducible Research
+- Pashler, H., & de Ruiter, J. P. (2017). [Taking Responsibility for Our Field’s Reputation](https://www.psychologicalscience.org/observer/taking-responsibility-for-our-fields-reputation). APS Observer, 30(30/8).
+    - [Cognitive Area Brownbag Discussion 09/06/2017](https://github.com/psu-psychology/cog-bbag-2017-18/blob/master/2017-09-06-Pashler-de-Ruiter.md)
+
+- Benjamin, D. J., Berger, J., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., Bollen, K., et al. (2017). [Redefine statistical significance.](https://psyarxiv.com/mky9j/download?format=pdf) PsyArXiv.
+    - [Cognitive Area Brownbag Discussion 10/11/2017](https://github.com/psu-psychology/cog-bbag-2017-18/blob/master/2017-10-11-p-lt-005.Rmd)
+
+- Lakens, D., Adolfi, F. G., Albers, C., Anvari, F., Apps, M. A. J., Argamon, S. E., van Assen, M. A. L. M., et al. (2017). [Justify Your Alpha: A Response to “Redefine Statistical Significance.”](https://psyarxiv.com/9s3y6/download?format=pdf) PsyArXiv.
+
+## Resources for Reproducible Research
+
+- [Open Science Foundation](https://osf.io)
+
+- [Databrary](https://nyu.databrary.org)
+
+- [Data Sharing Template](https://github.com/psu-psychology/data-sharing-template)
+
+- [CRAN Task View: Reproducable Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+
+- [rOpenSci: Using R to facilitate Reproducable Research](https://github.com/ropensci/rrrpkg)
+
+
+________________________________________________________
+Last updated on `r Sys.Date()`

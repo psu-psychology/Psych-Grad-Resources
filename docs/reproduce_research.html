@@ -9,9 +9,10 @@
 <meta name="generator" content="pandoc" />
 
 
+<meta name="author" content="Daniel N. Albohn" />
 
 
-<title></title>
+<title>Reproducible Research</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,6 +23,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-1.1/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -66,6 +68,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 </head>
 
@@ -221,31 +224,38 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Reproducible Research</h1>
+<h4 class="author"><em>Daniel N. Albohn</em></h4>
+<h4 class="date"><em>9/21/2017</em></h4>
 
 </div>
 
 
-<div id="psych-grad-resources" class="section level1">
-<h1>Psych-Grad-Resources</h1>
-<p>A repository of useful information and resources for graduate students in psychology at Penn State. To access the full website, please visit: <a href="https://psu-psychology.github.io/Psych-Grad-Resources/" class="uri">https://psu-psychology.github.io/Psych-Grad-Resources/</a></p>
-<div id="components" class="section level2">
-<h2>Components</h2>
-<p>In the main repository folder are the raw <code>.Rmd</code> and <code>.html</code> components used to build static site, plus some extra goodies (<code>footer.html</code>,<code>style.css</code>) for making the site look better.</p>
+<div id="understanding-replication-and-reproducible-research" class="section level2">
+<h2>Understanding Replication and Reproducible Research</h2>
 <ul>
-<li><code>docs/</code>: Folder GitHub pages uses to serve site.</li>
-<li><code>data/</code>: Folder contains a raw data file of journal impact factors and a handout version of the static webpages.</li>
-<li><code>man</code>: Journal articles referenced in each document are stored here.</li>
-<li><code>R</code>: R scripts for (re-)producing the site and static webpages quickly.</li>
+<li>Pashler, H., &amp; de Ruiter, J. P. (2017). <a href="https://www.psychologicalscience.org/observer/taking-responsibility-for-our-fields-reputation">Taking Responsibility for Our Field’s Reputation</a>. APS Observer, 30(30/8).
+<ul>
+<li><a href="https://github.com/psu-psychology/cog-bbag-2017-18/blob/master/2017-09-06-Pashler-de-Ruiter.md">Cognitive Area Brownbag Discussion 09/06/2017</a></li>
+</ul></li>
+<li>Benjamin, D. J., Berger, J., Johannesson, M., Nosek, B. A., Wagenmakers, E.-J., Berk, R., Bollen, K., et al. (2017). <a href="https://psyarxiv.com/mky9j/download?format=pdf">Redefine statistical significance.</a> PsyArXiv.
+<ul>
+<li><a href="https://github.com/psu-psychology/cog-bbag-2017-18/blob/master/2017-10-11-p-lt-005.Rmd">Cognitive Area Brownbag Discussion 10/11/2017</a></li>
+</ul></li>
+<li>Lakens, D., Adolfi, F. G., Albers, C., Anvari, F., Apps, M. A. J., Argamon, S. E., van Assen, M. A. L. M., et al. (2017). <a href="https://psyarxiv.com/9s3y6/download?format=pdf">Justify Your Alpha: A Response to “Redefine Statistical Significance.”</a> PsyArXiv.</li>
 </ul>
 </div>
-<div id="instructions" class="section level2">
-<h2>Instructions</h2>
-<ol style="list-style-type: decimal">
-<li>Clone or copy the site locally.</li>
-<li>Make any changes to the <code>.Rmd</code> files in the <code>data/</code> folder and re-knit them using <code>knitr</code>.</li>
-<li>From the site root directory, run <code>rmarkdown::render_site()</code> from your R or RStudio console to generate the HTML, CSS, and JS files. The site resides in <code>docs/</code> and may be viewed in any browser.</li>
-</ol>
-</div>
+<div id="resources-for-reproducible-research" class="section level2">
+<h2>Resources for Reproducible Research</h2>
+<ul>
+<li><p><a href="https://osf.io">Open Science Foundation</a></p></li>
+<li><p><a href="https://nyu.databrary.org">Databrary</a></p></li>
+<li><p><a href="https://github.com/psu-psychology/data-sharing-template">Data Sharing Template</a></p></li>
+<li><p><a href="https://cran.r-project.org/web/views/ReproducibleResearch.html">CRAN Task View: Reproducable Research</a></p></li>
+<li><p><a href="https://github.com/ropensci/rrrpkg">rOpenSci: Using R to facilitate Reproducable Research</a></p></li>
+</ul>
+<hr />
+<p>Last updated on 2017-09-21</p>
 </div>
 
 <p>Copyright &copy; Penn State Psychology. All rights reserved.</p>

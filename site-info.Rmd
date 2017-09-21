@@ -1,8 +1,15 @@
 ---
 title: "About the site"
+output: 
+  html_document:
+    theme: spacelab
+    css: style.css
+    toc: true
+    toc_depth: 2
 ---
 
 This site is generated in [R Markdown](http://rmarkdown.rstudio.com/) using [RStudio](http://rstudio.com).
 
-```{r, child="_sessioninfo.Rmd"}
+```{r}
+sessionInfo()
 ```

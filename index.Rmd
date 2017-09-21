@@ -6,7 +6,7 @@ output:
     css: style.css
 ---
 
-![](https://www.efficientvineyard.com/wp-content/uploads/2016/04/PS_HOR_RGB_2C.png){width=50%}
+![](data/psu_la.png){width=50%}![](data/psu-lion-1.png){width=25%}
 
 
 This website contains a central repository for resources that might be helpful for
