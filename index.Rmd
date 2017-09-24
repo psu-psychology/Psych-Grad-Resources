@@ -19,8 +19,8 @@ the website!
 
 Current maintainer(s): 
 
-[Daniel Albohn](www.sites.psu.edu/albohn)  
-Email: [dna5021@psu.edu](dna5021@psu.edu)  
-GitHub: [www.github.com/d-bohn](www.github.com/d-bohn)
+[Daniel Albohn](http://www.sites.psu.edu/albohn)  
+Email: dna5021@psu.edu  
+GitHub: [www.github.com/d-bohn](http://www.github.com/d-bohn)
 
 
