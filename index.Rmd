@@ -14,9 +14,8 @@ new and current graduate students in psychology at Penn State University. You ca
 access individual webpages with additional resources under the dropdown menu at
 the top of this page.
 
-If you would like to add to this repository, you can either follow the instructions for
-cloning and adding to the [GitHub repository](https://github.com/psu-psychology/Psych-Grad-Resources),
-or contact the current maintainer of the repository.
+Please submit new content, information, ideas, or suggestions for improving
+the website!
 
 Current maintainer(s): 
 

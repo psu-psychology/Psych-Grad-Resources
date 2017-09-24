@@ -45,7 +45,7 @@ software you collected the data on and what operating system was running
 while it was being collected can save headaches in the future, especially
 if you (or others) wish to replicate the paradigm/results.
 
-### 3). Using Undescriptive or Uniformative Variable and File Names
+### 3). Using Undescriptive or Uninformative Variable and File Names
 There is absolutely no need to limit variables names to an arbitrary number
 of characters. When designing a study that will log data (semi)-automatically,
 variable names should be descriptive of what they represent. For example,
@@ -97,7 +97,7 @@ One example of an organized file structure might be:
             - article1.pdf
             - ...
 
-### 2). Storing Altered Data Files / Overwriting Orignal Data File
+### 2). Storing Altered Data Files / Overwriting Original Data File
 While storing altered data files in-and-of itself is not a sin,
 storing manually altered data files as your *only* version of the
 data is a cardinal sin. You should always have an original copy of

@@ -20,6 +20,9 @@ navbar:
           href: RStudio-Markdown-Tips.html
         - text: "Reproducible Research"
           href: reproduce_research.html
+    - text: "Submit New Resource"
+      href: submit.html
+      icon: fa-folder-open-o
   right:
     - text: "Site info"
       href: site-info.html

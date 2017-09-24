@@ -29,7 +29,7 @@ are use quite often:
 | Keyboard help                   | `Alt`+`Shift`+`k`       | `option`+`Shift`+`k`       |
 | Insert assignment operator `<-` | `Alt`+`-`               | `option`+`-`               |
 | Insert pipe operator `%>%`      | `Ctrl`+`Shift`+`m`      | `Cmd`+`Shift`+`m`          |
-| Insert multiple cursurs         | `Ctrl`+`Alt`+ `L Mouse` | `Ctrl`+`option`+ `L Mouse` |
+| Insert multiple cursors         | `Ctrl`+`Alt`+ `L Mouse` | `Ctrl`+`option`+ `L Mouse` |
 | Insert code chunk `{r}`         | `Ctrl`+`Alt`+ `i`       | `Ctrl`+`option`+ `i`       |
 | Comment out lines `#`           | `Ctrl`+`Shift`+`c`      | `Cmd`+`Shift`+`c`          |
 | Search active document          | `Ctrl`+`f`              | `Cmd`+`f`                  |
@@ -52,7 +52,7 @@ You can see a cheatsheet for RMarkdown under "Help" -> "Cheetsheets" ->
 Some useful things to know:
 
 - Enclosing text in single \* *italicizes*  
-- Enclosing text in douuble \* **bolds**  
+- Enclosing text in double \* **bolds**  
 - Enclosing text in triple \* ***bold italics***  
 - Prefacing something with a \\ means "do not evaluate"
 
@@ -91,7 +91,7 @@ that can span multiple lines
     1. My point 1
     2. My point 2
     
-- Starting text with up to six \# creates differently formated headers:
+- Starting text with up to six \# creates differently formatted headers:
 
 # Header I
 ## Header II

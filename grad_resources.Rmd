@@ -54,8 +54,8 @@ behavioral experimentation. Thus, it is more
 heavily based in programming, but also allows for greater
 manipulation, control, and extension. This program
 may be better if the experiment is abnormal or complex.
-PsychoPy does offer a GUI for building experiements, but
-fine-tuned control requires python coding knowlede using
+PsychoPy does offer a GUI for building experiments, but
+fine-tuned control requires python coding knowledge using
 its "coding editor".
 
 The developers of PsychoPy are also attempting to make
@@ -213,7 +213,7 @@ https://box.psu.edu
 
 Penn State students have unlimited storage on Box with
 their PSU account. Box has partnered with Penn State
-and the Office of Research Protections to allow for resaerch data
+and the Office of Research Protections to allow for research data
 to be stored on Box, even storage of Protected Health
 Information (i.e., sensitive data). You can read more about the
 rules and regulations for storing sensitive data on Box
