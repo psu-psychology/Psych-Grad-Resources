@@ -364,14 +364,22 @@ and offer a [tutorial](https://ics.psu.edu/advanced-cyberinfrastructure/support/
 for connecting to their system.
 
 
-## Other Resources
+## Other Resources and Websites
 - [Penn State Data Science Website](https://psu-psychology.github.io/data-science-and-reproducibility/)
+
 - [Penn State Data Science Google Group](https://groups.google.com/forum/#!forum/psu-psychology-data-science)
+
 - [Penn State Psychology GitHub Repo](https://github.com/psu-psychology)
+
 - [Penn State's 2017 R Bootcamp](https://psu-psychology.github.io/r-bootcamp/)
+
 - [Penn State's QuantDev Tutorials Page](https://quantdev.ssri.psu.edu/tutorials)
+
 - [Programming for Psychologists](https://crumplab.github.io/programmingforpsych/)
+
 - [Data Visualization for Data Science](http://socviz.co/index.html)
+
+- [PsychMAP FaceBook Group](https://www.facebook.com/groups/psychmap/)
 
 ________________________________________________________
 

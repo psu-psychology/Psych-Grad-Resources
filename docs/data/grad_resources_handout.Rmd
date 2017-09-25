@@ -13,7 +13,7 @@ You can find the full information for each section on the website:
 
 http://bit.ly/psych_grad_resources
 
-of on Penn State psychology GitHub page:
+or on the Penn State Psychology GitHub page:
 
 http://bit.ly/psych-grad-resources_github
 
@@ -25,11 +25,11 @@ information on each of the software listed below, and links to tutorials.
 - Data Collection
     - Failure to Log Abnormalities Immediately
     - Failure to Record System Specifications
-    - Using Undescriptive or Uniformative Variable and File Names
+    - Using Undescriptive or Uninformative Variable and File Names
 
 - Data Storage
     - Unstructured File Organization
-    - Storing Altered Data Files / Overwriting Orignal Data File
+    - Storing Altered Data Files / Overwriting Original Data File
     - Altering Data Files Without Documentation
     - Saving Files in a Proprietary Format
     - Improper Data Backup and File Versioning
