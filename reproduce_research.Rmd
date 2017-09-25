@@ -26,20 +26,25 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Resources for Reproducible Research
 
 - [Open Science Foundation](https://osf.io)
-    - [OSF Preregistration Challenge](https://cos.io/prereg/) - Win $1000 if your preregistered work
-    gets published
+    - [OSF Preregistration Challenge](https://cos.io/prereg/) 
+        - Win $1000 if your preregistered work
+        gets published
     - [OSF Preregistration](http://help.osf.io/m/registrations/l/524205-register-your-project)
-<br></br>
-- [aspredicted.org](https://aspredicted.org) - Another preregistration database/source
 
-- [Databrary](https://nyu.databrary.org) - Repository for public data
+- [aspredicted.org](https://aspredicted.org) 
+    - Another preregistration database/source
+
+- [Databrary](https://nyu.databrary.org) 
+    - Repository for public data
 
 - [Data Sharing Template](https://github.com/psu-psychology/data-sharing-template)
 
 - [CRAN Task View: Reproducible Research](https://cran.r-project.org/web/views/ReproducibleResearch.html)
+    - List of R packages/resources to help with a reproducible workflow pipeline
 
 - [rOpenSci: Using R to facilitate Reproducible Research](https://github.com/ropensci/rrrpkg)
 
-- [statcheck.io](http://statcheck.io) - Check scientific articles for statistical accuracy
+- [statcheck.io](http://statcheck.io) 
+    - Check scientific articles for statistical accuracy
 ________________________________________________________
 Last updated on `r Sys.Date()`
