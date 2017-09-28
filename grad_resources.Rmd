@@ -101,6 +101,7 @@ account that allows for up to two active surveys at any time.
 #### Tutorials and Resources
 - [Tutorial](https://www.qualtrics.com/support/survey-platform/getting-started/step-1-beginning-build/)
 - [Advanced Tutorial](https://sites.google.com/site/complexcognitionbgsu/data-collection-software/qualtricsadvanced)
+- [QuantDev Tutorial on Connecting to Qualtrics API](https://quantdev.ssri.psu.edu/tutorials/using-qualtrics-and-boxr-r-packages)
 
 
 ## Statistical & Visualization Software
@@ -128,6 +129,20 @@ through a server operated by Penn State's
 - [The Personality Project's Guide to R](http://personality-project.org/r/)
 - [Learning to Work with R by Association for Psychological Science](https://www.psychologicalscience.org/observer/learning-to-work-with-r)
 - [A Psychologist's Guide to R](https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R)
+
+
+### JASP
+https://jasp-stats.org
+https://github.com/jasp-stats/jasp-desktop
+
+A statistical program with a GUI (like SPSS) that allows for easily computing
+both frequentist and Bayesian analyses. It is built using R and some
+[R packages](https://jasp-stats.org/r-package-list/) as a backend.
+
+#### Tutorials and Resources
+- [Forum](http://forum.cogsci.nl/index.php?p=/categories/jasp-bayesfactor)
+- [Getting started with JASP](https://jasp-stats.org/getting-started/)
+- [Video Tutorials](https://jasp-stats.org/video-tutorials/)
 
 
 ### Octave
@@ -218,6 +233,8 @@ to be stored on Box, even storage of Protected Health
 Information (i.e., sensitive data). You can read more about the
 rules and regulations for storing sensitive data on Box
 [here](http://box.psu.edu/rules-for-storing-protected-health-information-in-box/).
+
+- [QuantDev Tutorial on Connecting to Box API](https://quantdev.ssri.psu.edu/tutorials/using-qualtrics-and-boxr-r-packages)
 
 
 ## Image Manipulation
