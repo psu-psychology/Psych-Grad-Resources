@@ -259,7 +259,8 @@ an image, rather than pixels. This allows for a vector graphic to be
 of much higher quality than a bitmap (e.g., `.jpg`,`.png`,`.tiff`).
 Thus, vector graphics maintain their resolution and graphical positions
 even when changing image size/dimensions (e.g., enlarging or shrinking
-an image to fit a presentation).
+an image to fit a presentation). Most journals require figures to be
+submitted either at very high resolution or as a vector graphic.
 
 
 ### ImageMagick
@@ -324,16 +325,21 @@ article and import it.
 ### Papers
 http://www.readcube.com/papers/
 
-A non-free ($49.99 for students) PDF and reference manager. Arguably,
-(in my opinion) the best integration of a reference and PDF
-file manager. It is easy to use and integrates with both
-Microsoft Word and LaTex seamlessly.
+A non-free ($49.99 for students) PDF and reference manager. Recently
+were bought out and switched to a subscription model.
+
+### Endnote
+https://endnote.com/
+
+A non-free ($20 for students from PSU software store)
+reference manager. Works well cross platform, and has
+integration with MS Word.
 
 
 ## Penn State Resources
 ### PASS and Personal Webspace
-Homepage: https://explorer.pass.psu.edu/  
-Homepage: http://personal.psu.edu/
+PASS homepage: https://explorer.pass.psu.edu/  
+Personal homepage: http://personal.psu.edu/
 
 Personal webspace provided by Penn State to host files.
 Must [apply](https://www.work.psu.edu/webspace/) for webspace.
@@ -345,8 +351,7 @@ web content. Theoretically, you can code
 experiments in HTML and host them on your personal
 webspace. For example, see a working
 [example](http://php.scripts.psu.edu/dna5021/cyberball/index.htm)
-of the
-[CyberBall](https://cyberball.wikispaces.com) 
+of the [CyberBall](https://cyberball.wikispaces.com) 
 task on my webspace.
 
 ### WebApps
@@ -371,6 +376,7 @@ Microsoft Office (for both Windows and Macs) and Microsoft Windows 10
 for free. Instructions are provided at the link above.
 
 - [PowerPoint Templates](http://www.slidescarnival.com/category/free-templates)
+that can be used for presentations or posters.
 
 
 ### Institute for CyberScience Advanced CyberInfrastructure
@@ -382,6 +388,29 @@ maintain a [variety of programs](https://ics.psu.edu/advanced-cyberinfrastructur
 and offer a [tutorial](https://ics.psu.edu/advanced-cyberinfrastructure/support/tutorials/)
 for connecting to their system.
 
+### Penn State Software Center
+Highly discounted software for students, including:
+
+- SAS ($47)
+
+- minitab ($16)
+
+- Wolfram ($23)
+
+- ArcGIS (Free)
+
+- Matlab ($18)
+
+- NVivo ($50)
+
+- Endnote ($40)
+
+### Library Services
+The library offers a variety of free resources for students other than books,
+including free [book scanning](https://libraries.psu.edu/services/technology-equipment/scanners),
+and even free [3D printing](https://makercommons.psu.edu/technologies/3d-printing/)
+for smaller projects, and affordable prices for larger ones.
+
 
 ## Other Resources and Websites
 - [Penn State Data Science Website](https://psu-psychology.github.io/data-science-and-reproducibility/)
@@ -391,6 +420,8 @@ for connecting to their system.
 - [Penn State Psychology GitHub Repo](https://github.com/psu-psychology)
 
 - [Penn State's 2017 R Bootcamp](https://psu-psychology.github.io/r-bootcamp/)
+
+- [Penn State's 2018 R Bootcamp](https://psu-psychology.github.io/r-bootcamp-2018/)
 
 - [Penn State's QuantDev Tutorials Page](https://quantdev.ssri.psu.edu/tutorials)
 

@@ -21,9 +21,11 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -32,10 +34,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -90,6 +94,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -411,7 +418,7 @@ Homepage: <a href="https://github.com" class="uri">https://github.com</a></p>
 <div id="inkscape" class="section level3">
 <h3>Inkscape</h3>
 <p><a href="https://inkscape.org/en/" class="uri">https://inkscape.org/en/</a></p>
-<p>Program for creating, editing, and manipulating vector graphics (e.g., <code>.svg</code>, <code>.pdf</code>). <a href="https://en.wikipedia.org/wiki/Vector_graphics">Vector graphics</a> are images based on location, position, and attributes of points in an an image, rather than pixels. This allows for a vector graphic to be of much higher quality than a bitmap (e.g., <code>.jpg</code>,<code>.png</code>,<code>.tiff</code>). Thus, vector graphics maintain their resolution and graphical positions even when changing image size/dimensions (e.g., enlarging or shrinking an image to fit a presentation).</p>
+<p>Program for creating, editing, and manipulating vector graphics (e.g., <code>.svg</code>, <code>.pdf</code>). <a href="https://en.wikipedia.org/wiki/Vector_graphics">Vector graphics</a> are images based on location, position, and attributes of points in an an image, rather than pixels. This allows for a vector graphic to be of much higher quality than a bitmap (e.g., <code>.jpg</code>,<code>.png</code>,<code>.tiff</code>). Thus, vector graphics maintain their resolution and graphical positions even when changing image size/dimensions (e.g., enlarging or shrinking an image to fit a presentation). Most journals require figures to be submitted either at very high resolution or as a vector graphic.</p>
 </div>
 <div id="imagemagick" class="section level3">
 <h3>ImageMagick</h3>
@@ -450,15 +457,20 @@ Homepage: <a href="https://github.com" class="uri">https://github.com</a></p>
 <div id="papers" class="section level3">
 <h3>Papers</h3>
 <p><a href="http://www.readcube.com/papers/" class="uri">http://www.readcube.com/papers/</a></p>
-<p>A non-free ($49.99 for students) PDF and reference manager. Arguably, (in my opinion) the best integration of a reference and PDF file manager. It is easy to use and integrates with both Microsoft Word and LaTex seamlessly.</p>
+<p>A non-free ($49.99 for students) PDF and reference manager. Recently were bought out and switched to a subscription model.</p>
+</div>
+<div id="endnote" class="section level3">
+<h3>Endnote</h3>
+<p><a href="https://endnote.com/" class="uri">https://endnote.com/</a></p>
+<p>A non-free ($20 for students from PSU software store) reference manager. Works well cross platform, and has integration with MS Word.</p>
 </div>
 </div>
 <div id="penn-state-resources" class="section level2">
 <h2>Penn State Resources</h2>
 <div id="pass-and-personal-webspace" class="section level3">
 <h3>PASS and Personal Webspace</h3>
-<p>Homepage: <a href="https://explorer.pass.psu.edu/" class="uri">https://explorer.pass.psu.edu/</a><br />
-Homepage: <a href="http://personal.psu.edu/" class="uri">http://personal.psu.edu/</a></p>
+<p>PASS homepage: <a href="https://explorer.pass.psu.edu/" class="uri">https://explorer.pass.psu.edu/</a><br />
+Personal homepage: <a href="http://personal.psu.edu/" class="uri">http://personal.psu.edu/</a></p>
 <p>Personal webspace provided by Penn State to host files. Must <a href="https://www.work.psu.edu/webspace/">apply</a> for webspace.</p>
 <p>Your personal webspace has the ability to host files accessible either to just you (<code>www_protected/</code>) or the world (<code>www/</code>). If you upload HTML files, you can host dynamic web content. Theoretically, you can code experiments in HTML and host them on your personal webspace. For example, see a working <a href="http://php.scripts.psu.edu/dna5021/cyberball/index.htm">example</a> of the <a href="https://cyberball.wikispaces.com">CyberBall</a> task on my webspace.</p>
 </div>
@@ -477,13 +489,30 @@ Homepage: <a href="http://personal.psu.edu/" class="uri">http://personal.psu.edu
 <p><a href="http://software.psu.edu/news/microsoft-no-cost-software" class="uri">http://software.psu.edu/news/microsoft-no-cost-software</a></p>
 <p>As a full time Penn State student, you have the opportunity to receive Microsoft Office (for both Windows and Macs) and Microsoft Windows 10 for free. Instructions are provided at the link above.</p>
 <ul>
-<li><a href="http://www.slidescarnival.com/category/free-templates">PowerPoint Templates</a></li>
+<li><a href="http://www.slidescarnival.com/category/free-templates">PowerPoint Templates</a> that can be used for presentations or posters.</li>
 </ul>
 </div>
 <div id="institute-for-cyberscience-advanced-cyberinfrastructure" class="section level3">
 <h3>Institute for CyberScience Advanced CyberInfrastructure</h3>
 <p><a href="https://ics.psu.edu/advanced-cyberinfrastructure/" class="uri">https://ics.psu.edu/advanced-cyberinfrastructure/</a></p>
 <p>Provides advanced computing needs for researchers that require specialized and/or high-performance computing. They maintain a <a href="https://ics.psu.edu/advanced-cyberinfrastructure/support/software/">variety of programs</a>, and offer a <a href="https://ics.psu.edu/advanced-cyberinfrastructure/support/tutorials/">tutorial</a> for connecting to their system.</p>
+</div>
+<div id="penn-state-software-center" class="section level3">
+<h3>Penn State Software Center</h3>
+<p>Highly discounted software for students, including:</p>
+<ul>
+<li><p>SAS ($47)</p></li>
+<li><p>minitab ($16)</p></li>
+<li><p>Wolfram ($23)</p></li>
+<li><p>ArcGIS (Free)</p></li>
+<li><p>Matlab ($18)</p></li>
+<li><p>NVivo ($50)</p></li>
+<li><p>Endnote ($40)</p></li>
+</ul>
+</div>
+<div id="library-services" class="section level3">
+<h3>Library Services</h3>
+<p>The library offers a variety of free resources for students other than books, including free <a href="https://libraries.psu.edu/services/technology-equipment/scanners">book scanning</a>, and even free <a href="https://makercommons.psu.edu/technologies/3d-printing/">3D printing</a> for smaller projects, and affordable prices for larger ones.</p>
 </div>
 </div>
 <div id="other-resources-and-websites" class="section level2">
@@ -493,6 +522,7 @@ Homepage: <a href="http://personal.psu.edu/" class="uri">http://personal.psu.edu
 <li><p><a href="https://groups.google.com/forum/#!forum/psu-psychology-data-science">Penn State Data Science Google Group</a></p></li>
 <li><p><a href="https://github.com/psu-psychology">Penn State Psychology GitHub Repo</a></p></li>
 <li><p><a href="https://psu-psychology.github.io/r-bootcamp/">Penn State’s 2017 R Bootcamp</a></p></li>
+<li><p><a href="https://psu-psychology.github.io/r-bootcamp-2018/">Penn State’s 2018 R Bootcamp</a></p></li>
 <li><p><a href="https://quantdev.ssri.psu.edu/tutorials">Penn State’s QuantDev Tutorials Page</a></p></li>
 <li><p><a href="https://crumplab.github.io/programmingforpsych/">Programming for Psychologists</a></p></li>
 <li><p><a href="http://socviz.co/index.html">Data Visualization for Data Science</a></p></li>
@@ -500,7 +530,7 @@ Homepage: <a href="http://personal.psu.edu/" class="uri">http://personal.psu.edu
 <li><p><a href="http://www.slidescarnival.com/category/free-templates">PowerPoint Templates</a></p></li>
 </ul>
 <hr />
-<p>Last updated on 2017-11-29</p>
+<p>Last updated on 2018-09-22</p>
 </div>
 
 <p>Copyright &copy; Penn State Psychology. All rights reserved.</p>

@@ -21,9 +21,11 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -32,10 +34,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -90,6 +94,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -335,7 +342,7 @@ $(document).ready(function () {
 <li>Code in-line is inserted with one backtick `and ending with another backtick `
 <ul>
 <li>` r <em>code here</em> `</li>
-<li>Allows for dynamic content, like the current data and time is <em>2017-11-29 23:16:19</em></li>
+<li>Allows for dynamic content, like the current data and time is <em>2018-09-22 17:55:48</em></li>
 </ul></li>
 <li>Enclosing text with brackets “[” and then “(” links to other websites/documents
 <ul>
@@ -375,15 +382,9 @@ $(document).ready(function () {
 </ul></li>
 </ul>
 <p>Just an image:</p>
-<div class="figure">
-<img src="https://i.pinimg.com/564x/7c/6c/44/7c6c441d09e7139963e22d9f944a8104--penn-state-logo-penn-state-university.jpg" />
-
-</div>
+<p><img src="https://i.pinimg.com/564x/7c/6c/44/7c6c441d09e7139963e22d9f944a8104--penn-state-logo-penn-state-university.jpg" /></p>
 <p>You can resize an image by including curly brackets { at the end and a height/width specifer within them (e.g., width=50%):</p>
-<div class="figure">
-<img src="https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/21272395_1620613354657616_1169065023125134461_n.jpg?oh=7f3c291d74946b40e133e16b26ae8995&amp;oe=5A4529EE" style="width:50.0%" />
-
-</div>
+<p><img src="https://scontent.fagc1-1.fna.fbcdn.net/v/t1.0-9/21272395_1620613354657616_1169065023125134461_n.jpg?oh=7f3c291d74946b40e133e16b26ae8995&amp;oe=5A4529EE" style="width:50.0%" /></p>
 </div>
 </div>
 </div>

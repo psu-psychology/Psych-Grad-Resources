@@ -20,9 +20,11 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-1.1/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -31,10 +33,12 @@
   }
 </style>
 <script type="text/javascript">
-if (window.hljs && document.readyState && document.readyState === "complete") {
-   window.setTimeout(function() {
-      hljs.initHighlighting();
-   }, 0);
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
 }
 </script>
 
@@ -89,6 +93,9 @@ img {
 }
 .tabbed-pane {
   padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
 }
 button.code-folding-btn:focus {
   outline: none;
@@ -237,13 +244,13 @@ $(document).ready(function () {
 
 <p>This site is generated in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a href="http://rstudio.com">RStudio</a>.</p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.4.1 (2017-06-30)
-## Platform: x86_64-apple-darwin16.7.0 (64-bit)
-## Running under: macOS High Sierra 10.13
+<pre><code>## R version 3.5.1 (2018-07-02)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS High Sierra 10.13.4
 ## 
 ## Matrix products: default
-## BLAS: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
-## LAPACK: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -252,27 +259,27 @@ $(document).ready(function () {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] bindrcpp_0.2    dplyr_0.7.4     purrr_0.2.4     readr_1.1.1    
-## [5] tidyr_0.7.2     tibble_1.3.4    ggplot2_2.2.1   tidyverse_1.1.1
+##  [1] bindrcpp_0.2.2  forcats_0.3.0   stringr_1.3.1   dplyr_0.7.6    
+##  [5] purrr_0.2.5     readr_1.1.1     tidyr_0.8.1     tibble_1.4.2   
+##  [9] ggplot2_3.0.0   tidyverse_1.2.1
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.13      highr_0.6         cellranger_1.1.0 
-##  [4] compiler_3.4.1    plyr_1.8.4        bindr_0.1        
-##  [7] forcats_0.2.0     tools_3.4.1       digest_0.6.12    
-## [10] viridisLite_0.2.0 lubridate_1.6.0   jsonlite_1.5     
-## [13] evaluate_0.10.1   nlme_3.1-131      gtable_0.2.0     
-## [16] lattice_0.20-35   pkgconfig_2.0.1   rlang_0.1.2      
-## [19] psych_1.7.8       yaml_2.1.14       parallel_3.4.1   
-## [22] haven_1.1.0       kableExtra_0.6.0  xml2_1.1.1       
-## [25] httr_1.3.1        stringr_1.2.0     knitr_1.17       
-## [28] hms_0.3           rprojroot_1.2     grid_3.4.1       
-## [31] glue_1.1.1        R6_2.2.2          readxl_1.0.0     
-## [34] foreign_0.8-69    rmarkdown_1.6     modelr_0.1.1     
-## [37] reshape2_1.4.2    magrittr_1.5      backports_1.1.1  
-## [40] scales_0.5.0      htmltools_0.3.6   rvest_0.3.2      
-## [43] assertthat_0.2.0  mnormt_1.5-5      colorspace_1.3-2 
-## [46] stringi_1.1.5     lazyeval_0.2.0    munsell_0.4.3    
-## [49] broom_0.4.2</code></pre>
+##  [1] Rcpp_0.12.18      highr_0.7         cellranger_1.1.0 
+##  [4] pillar_1.2.3      compiler_3.5.1    plyr_1.8.4       
+##  [7] bindr_0.1.1       tools_3.5.1       digest_0.6.16    
+## [10] viridisLite_0.3.0 lubridate_1.7.4   jsonlite_1.5     
+## [13] evaluate_0.10.1   nlme_3.1-137      gtable_0.2.0     
+## [16] lattice_0.20-35   pkgconfig_2.0.1   rlang_0.2.1      
+## [19] cli_1.0.0         rstudioapi_0.7    yaml_2.2.0       
+## [22] haven_1.1.2       kableExtra_0.9.0  withr_2.1.2      
+## [25] xml2_1.2.0        httr_1.3.1        knitr_1.20       
+## [28] hms_0.4.2         rprojroot_1.3-2   grid_3.5.1       
+## [31] tidyselect_0.2.4  glue_1.2.0        R6_2.2.2         
+## [34] readxl_1.1.0      rmarkdown_1.10    modelr_0.1.2     
+## [37] magrittr_1.5      backports_1.1.2   scales_0.5.0     
+## [40] htmltools_0.3.6   rvest_0.3.2       assertthat_0.2.0 
+## [43] colorspace_1.3-2  stringi_1.2.4     lazyeval_0.2.1   
+## [46] munsell_0.5.0     broom_0.5.0       crayon_1.3.4</code></pre>
 
 <p>Copyright &copy; Penn State Psychology. All rights reserved.</p>
 

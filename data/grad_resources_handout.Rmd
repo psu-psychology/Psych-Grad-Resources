@@ -13,7 +13,7 @@ You can find the full information for each section on the website:
 
 http://bit.ly/psych_grad_resources
 
-or on the Penn State Psychology GitHub page:
+or on the Penn State Psychology GitHub repository:
 
 http://bit.ly/psych-grad-resources_github
 
@@ -73,6 +73,7 @@ information on each of the software listed below, and links to tutorials.
     - Zotero (https://www.zotero.org)
     - JabRef (http://www.jabref.org)
     - Papers (http://www.readcube.com/papers/)
+    - EndNote (https://endnote.com/)
 
 - **Penn State Resources**
     - PASS and Personal Webspace (Homepage: https://explorer.pass.psu.edu/)
@@ -80,6 +81,8 @@ information on each of the software listed below, and links to tutorials.
     - Adobe Creative Cloud Suite (https://www.adobe.psu.edu/creative-cloud/)
     - Microsoft Office for Students (http://software.psu.edu/news/microsoft-no-cost-software)
     - Institute for CyberScience Advanced CyberInfrastructure (https://ics.psu.edu/advanced-cyberinfrastructure/)
+    - PSU Library Free Book Scanning (https://libraries.psu.edu/services/technology-equipment/scanners)
+    - PSU Library Free 3D Printing (https://makercommons.psu.edu/technologies/3d-printing/)
 
 ## Other Resources
 - Penn State Data Science Website (https://psu-psychology.github.io/data-science-and-reproducibility/)
