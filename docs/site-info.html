@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -22,9 +23,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -73,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -89,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -99,6 +96,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -114,7 +114,6 @@ body {
   padding-top: 57px;
   margin-top: -57px;
 }
-
 .section h2 {
   padding-top: 57px;
   margin-top: -57px;
@@ -134,6 +133,43 @@ body {
 .section h6 {
   padding-top: 57px;
   margin-top: -57px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -155,19 +191,73 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -244,13 +334,13 @@ $(document).ready(function () {
 
 <p>This site is generated in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a href="http://rstudio.com">RStudio</a>.</p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.5.1 (2018-07-02)
+<pre><code>## R version 3.6.1 (2019-07-05)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14
+## Running under: macOS Mojave 10.14.6
 ## 
 ## Matrix products: default
-## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -259,27 +349,28 @@ $(document).ready(function () {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] bindrcpp_0.2.2  forcats_0.3.0   stringr_1.3.1   dplyr_0.7.6    
-##  [5] purrr_0.2.5     readr_1.1.1     tidyr_0.8.1     tibble_1.4.2   
-##  [9] ggplot2_3.0.0   tidyverse_1.2.1
+## [1] forcats_0.4.0   stringr_1.4.0   dplyr_0.8.3     purrr_0.3.2    
+## [5] readr_1.3.1     tidyr_0.8.3     tibble_2.1.3    ggplot2_3.2.1  
+## [9] tidyverse_1.2.1
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_0.12.18      highr_0.7         cellranger_1.1.0 
-##  [4] pillar_1.2.3      compiler_3.5.1    plyr_1.8.4       
-##  [7] bindr_0.1.1       tools_3.5.1       digest_0.6.16    
-## [10] viridisLite_0.3.0 lubridate_1.7.4   jsonlite_1.5     
-## [13] evaluate_0.10.1   nlme_3.1-137      gtable_0.2.0     
-## [16] lattice_0.20-35   pkgconfig_2.0.1   rlang_0.2.1      
-## [19] cli_1.0.0         rstudioapi_0.7    yaml_2.2.0       
-## [22] haven_1.1.2       kableExtra_0.9.0  withr_2.1.2      
-## [25] xml2_1.2.0        httr_1.3.1        knitr_1.20       
-## [28] hms_0.4.2         rprojroot_1.3-2   grid_3.5.1       
-## [31] tidyselect_0.2.4  glue_1.2.0        R6_2.2.2         
-## [34] readxl_1.1.0      rmarkdown_1.10    modelr_0.1.2     
-## [37] magrittr_1.5      backports_1.1.2   scales_0.5.0     
-## [40] htmltools_0.3.6   rvest_0.3.2       assertthat_0.2.0 
-## [43] colorspace_1.3-2  stringi_1.2.4     lazyeval_0.2.1   
-## [46] munsell_0.5.0     broom_0.5.0       crayon_1.3.4</code></pre>
+##  [1] tidyselect_0.2.5  xfun_0.9          haven_2.1.1      
+##  [4] lattice_0.20-38   colorspace_1.4-1  generics_0.0.2   
+##  [7] vctrs_0.2.0       htmltools_0.3.6   viridisLite_0.3.0
+## [10] yaml_2.2.0        rlang_0.4.0       pillar_1.4.2     
+## [13] glue_1.3.1        withr_2.1.2       modelr_0.1.5     
+## [16] readxl_1.3.1      munsell_0.5.0     gtable_0.3.0     
+## [19] cellranger_1.1.0  rvest_0.3.4       kableExtra_1.1.0 
+## [22] evaluate_0.14     knitr_1.24        highr_0.8        
+## [25] broom_0.5.2       Rcpp_1.0.2        scales_1.0.0     
+## [28] backports_1.1.4   webshot_0.5.1     jsonlite_1.6     
+## [31] hms_0.5.0         packrat_0.5.0     digest_0.6.20    
+## [34] stringi_1.4.3     grid_3.6.1        cli_1.1.0        
+## [37] tools_3.6.1       magrittr_1.5      lazyeval_0.2.2   
+## [40] crayon_1.3.4      pkgconfig_2.0.2   zeallot_0.1.0    
+## [43] xml2_1.2.2        lubridate_1.7.4   assertthat_0.2.1 
+## [46] rmarkdown_1.15    httr_1.4.1        rstudioapi_0.10  
+## [49] R6_2.4.0          nlme_3.1-141      compiler_3.6.1</code></pre>
 
 <p>Copyright &copy; Penn State Psychology. All rights reserved.</p>
 
@@ -299,6 +390,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

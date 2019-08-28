@@ -378,7 +378,6 @@ for free. Instructions are provided at the link above.
 - [PowerPoint Templates](http://www.slidescarnival.com/category/free-templates)
 that can be used for presentations or posters.
 
-
 ### Institute for CyberScience Advanced CyberInfrastructure
 https://ics.psu.edu/advanced-cyberinfrastructure/
 
@@ -388,8 +387,16 @@ maintain a [variety of programs](https://ics.psu.edu/advanced-cyberinfrastructur
 and offer a [tutorial](https://ics.psu.edu/advanced-cyberinfrastructure/support/tutorials/)
 for connecting to their system.
 
+Some labs have recently switch to ICS server space with the closure of the CLA "R drive" space.
+If your lab has opted for ICS server space, you can access your lab drive space through the online
+[ICS portal](https://portal.aci.ics.psu.edu/), which also allows students to access other interactive
+apps and servcies including MATLAB, SPM, and arcGIS.
+
+If your lab does not have access to the ICS server, you can request a free ICS account on the the
+[ICS webstite](https://ics.psu.edu/computing-services/account-setup/).
+
 ### Penn State Software Center
-Highly discounted software for students, including:
+Highly discounted software for students, including (but not limited to):
 
 - SAS ($47)
 
@@ -411,7 +418,6 @@ including free [book scanning](https://libraries.psu.edu/services/technology-equ
 and even free [3D printing](https://makercommons.psu.edu/technologies/3d-printing/)
 for smaller projects, and affordable prices for larger ones.
 
-
 ## Other Resources and Websites
 - [Penn State Data Science Website](https://psu-psychology.github.io/data-science-and-reproducibility/)
 
@@ -422,6 +428,8 @@ for smaller projects, and affordable prices for larger ones.
 - [Penn State's 2017 R Bootcamp](https://psu-psychology.github.io/r-bootcamp/)
 
 - [Penn State's 2018 R Bootcamp](https://psu-psychology.github.io/r-bootcamp-2018/)
+
+- [Penn State's 2019 R Bootcamp](https://psu-psychology.github.io/r-bootcamp-2019/)
 
 - [Penn State's QuantDev Tutorials Page](https://quantdev.ssri.psu.edu/tutorials)
 

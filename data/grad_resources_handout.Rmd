@@ -1,7 +1,7 @@
 ---
 title: "Resources for Psychology Graduate Students"
 author: "Daniel N. Albohn"
-date: "9/7/2017"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
 output: pdf_document
 ---
 
@@ -88,7 +88,7 @@ information on each of the software listed below, and links to tutorials.
 - Penn State Data Science Website (https://psu-psychology.github.io/data-science-and-reproducibility/)
 - Penn State Data Science Google Group (https://groups.google.com/forum/#!forum/psu-psychology-data-science)
 - Penn State Psychology GitHub Repo (https://github.com/psu-psychology)
-- Penn State's 2017 R Bootcamp (https://psu-psychology.github.io/r-bootcamp/)
+- Penn State's 2019 R Bootcamp (https://psu-psychology.github.io/r-bootcamp-2019/)
 - Penn State's QuantDev Tutorials Page (https://quantdev.ssri.psu.edu/tutorials)
 - Programming for Psychologists (https://crumplab.github.io/programmingforpsych/)
 - Data Visualization for Data Science (http://socviz.co/index.html)
