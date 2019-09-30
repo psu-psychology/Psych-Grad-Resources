@@ -130,6 +130,30 @@ through a server operated by Penn State's
 - [Learning to Work with R by Association for Psychological Science](https://www.psychologicalscience.org/observer/learning-to-work-with-r)
 - [A Psychologist's Guide to R](https://github.com/seanchrismurphy/A-Psychologists-Guide-to-R)
 
+### Rmarkdown
+https://rmarkdown.rstudio.com/
+
+R Markdown documents are fully reproducible. Use a productive notebook interface 
+to weave together narrative text and code to produce elegantly formatted output. 
+Use multiple languages including R, Python, and SQL.
+
+##### Tutorials and Resources
+- [RMarkdown: What are You Waiting For?](http://spsp.org/news-center/member-newsletters/september-2019/rmarkdown)
+- [Cheetsheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [Introduction to Rmarkdown](https://rmarkdown.rstudio.com/lesson-1.html)
+- [Reference Book](https://bookdown.org/yihui/rmarkdown/)
+
+### Shiny
+https://shiny.rstudio.com/
+
+Shiny is an R package that makes it easy to build interactive web apps straight
+from R. You can host standalone apps on a webpage or embed them in R Markdown
+documents or build dashboards. You can also extend your Shiny apps with CSS
+themes, htmlwidgets, and JavaScript actions.
+
+##### Tutorials and Resources
+- [Reference Articles](https://shiny.rstudio.com/articles/)
+- [Cheetsheet](https://shiny.rstudio.com/images/shiny-cheatsheet.pdf)
 
 ### JASP
 https://jasp-stats.org
@@ -334,7 +358,6 @@ https://endnote.com/
 A non-free ($20 for students from PSU software store)
 reference manager. Works well cross platform, and has
 integration with MS Word.
-
 
 ## Penn State Resources
 ### PASS and Personal Webspace

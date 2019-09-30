@@ -10,3 +10,4 @@ files <- list.files(path='.', pattern = '.Rmd')
 
 purrr::map(files, rmarkdown::render, output_format = 'html_document')
 rmarkdown::render_site()
+
