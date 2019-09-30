@@ -87,6 +87,7 @@ information on each of the software listed below, and links to tutorials.
     - PSU Library Free 3D Printing (https://makercommons.psu.edu/technologies/3d-printing/)
 
 ## Other Resources
+- Penn State Psychology Slack Channel (psu-psychology-forum.slack.com)
 - Penn State Data Science Website (https://psu-psychology.github.io/data-science-and-reproducibility/)
 - Penn State Data Science Google Group (https://groups.google.com/forum/#!forum/psu-psychology-data-science)
 - Penn State Psychology GitHub Repo (https://github.com/psu-psychology)

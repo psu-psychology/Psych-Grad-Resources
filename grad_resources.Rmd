@@ -442,7 +442,9 @@ and even free [3D printing](https://makercommons.psu.edu/technologies/3d-printin
 for smaller projects, and affordable prices for larger ones.
 
 ## Other Resources and Websites
-- [Penn State Data Science Website](https://psu-psychology.github.io/data-science-and-reproducibility/)
+[Penn State Psychology Slack Channel](psu-psychology-forum.slack.com)
+
+- [Penn State Psychology Data Science Website](https://psu-psychology.github.io/data-science-and-reproducibility/)
 
 - [Penn State Data Science Google Group](https://groups.google.com/forum/#!forum/psu-psychology-data-science)
 
