@@ -48,6 +48,8 @@ information on each of the software listed below, and links to tutorials.
 
 - **Statistical & Visualization Software**
     - R and RStudio (https://cran.r-project.org)
+        - Rmarkdown (https://rmarkdown.rstudio.com/)
+        - Shiny (https://shiny.rstudio.com/)
     - Octave (https://www.gnu.org/software/octave/)
     - Plotly (https://plot.ly
     - Tableau (https://www.tableau.com)
